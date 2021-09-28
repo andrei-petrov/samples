@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deploy-info product_version="1.0">        
+	<sql-server server_name="" db_name="RIO_IPS"/>
+	<sql-scripts>
+		<script step_number="0" sql_script_file="AddUser.sql"/>
+		<script step_number="1" sql_script_file="ClearDeliceTechProcess.sql"/>
+		<script step_number="2" sql_script_file="ClearRIOIPS.sql"/>
+		<script step_number="3" sql_script_file="ChangePath.sql"/>
+	</sql-scripts>
+</deploy-info>
+

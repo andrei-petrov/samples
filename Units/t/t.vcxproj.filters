@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Module">
+      <UniqueIdentifier>{00789e01-f3e0-4a5d-b1c8-54c15ab3e95d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{36033f55-7dce-442b-898a-be223406a947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{3b5a4bd8-416a-47ce-83a2-7992badbc144}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Exception\ThrowException">
+      <UniqueIdentifier>{37e9a5f4-19bb-4c68-9bd5-62ef0c937227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFC extensions">
+      <UniqueIdentifier>{3fe47cce-9f16-4096-9016-b52add2600c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{09718775-e9f9-4b26-bf0f-caaa4cf7faf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ptr">
+      <UniqueIdentifier>{2fa35a20-0c4c-45c2-9503-6cea4aabc811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{0bdd4a35-4f44-44a5-a5cd-1f8a059e3f24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Constants.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="SOURCE\stdafx.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\T.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ComException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DisabledMessagesData.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Exception.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\McException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MessageBox.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SimpleException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HyperLink.h">
+      <Filter>MFC extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\OleMessageFilter.h">
+      <Filter>MFC extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WaitCursor.h">
+      <Filter>MFC extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\WinApp.h">
+      <Filter>MFC extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\HelpInfo.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Misc.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OleVariant.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Object.h">
+      <Filter>Ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegSettingTraits.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Settings.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SettingTraits.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SOURCE\stdafx.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ComException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DisabledMessagesData.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Exception.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\McException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MessageBox.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SimpleException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="source\HyperLink.cpp">
+      <Filter>MFC extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OleMessageFilter.cpp">
+      <Filter>MFC extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\WaitCursor.cpp">
+      <Filter>MFC extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WinApp.cpp">
+      <Filter>MFC extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\HelpInfo.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Misc.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\OleVariant.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object.cpp">
+      <Filter>Ptr</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegSettingTraits.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Settings.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ThrowExceptionImpl.cpp">
+      <Filter>Exception\ThrowException</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource\t.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

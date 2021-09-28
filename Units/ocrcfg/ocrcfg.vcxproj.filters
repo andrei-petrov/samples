@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Module">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Res">
+      <UniqueIdentifier>{6a130afd-f585-4a1b-bc30-6925ff25089d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{2edec07a-5439-4747-99db-c742a520b253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets">
+      <UniqueIdentifier>{0da21d8e-87ed-4bb9-a29e-b6b5b7ebe408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\Welcome">
+      <UniqueIdentifier>{af13ccb3-6be8-4260-9151-830d3949fc84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\Finish">
+      <UniqueIdentifier>{db257617-4253-4b7e-941a-5137775bf5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\CreateDB">
+      <UniqueIdentifier>{3dd8b434-f5ea-4507-93e1-9eeeaa49d6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\Deploy">
+      <UniqueIdentifier>{9ebb7067-c2cf-4697-b1bb-307fdf125d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\Data">
+      <UniqueIdentifier>{7484d055-4fb6-45fb-9c04-223c855d28b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\SelectServers">
+      <UniqueIdentifier>{0a5f38d6-5088-47a4-b1bb-21710f1cc4be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\ConfigureDCOM">
+      <UniqueIdentifier>{7d6eeb7d-6e0a-4a57-8613-e0e80c4475d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{b2300b39-1c39-42be-9a92-af052b056208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{29f30bea-2bb5-40a2-9db2-f340473c237d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\RegJobs">
+      <UniqueIdentifier>{d19508fa-f367-4b66-98d8-22aa6047d593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\SoftLibrary">
+      <UniqueIdentifier>{57c280af-1092-4cde-84ba-982a2be50cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\RegServices">
+      <UniqueIdentifier>{691db961-0682-407a-ac55-182ff57b1069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\Credentials">
+      <UniqueIdentifier>{8fd43b5f-4a3c-4208-a513-be5f3e53740c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\AppyScripts">
+      <UniqueIdentifier>{bc4744ae-1ab8-443c-8c6a-3a2fba11729c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pages &amp; Sheets\CreateFolder">
+      <UniqueIdentifier>{7a46ab26-7c61-4865-94e0-2a029c20a67f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ComRaiseError.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\misc.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stdafx.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\WelcomePage.cpp">
+      <Filter>Pages &amp; Sheets\Welcome</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FinishPage.cpp">
+      <Filter>Pages &amp; Sheets\Finish</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CreateDBPage.cpp">
+      <Filter>Pages &amp; Sheets\CreateDB</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CreateDBThread.cpp">
+      <Filter>Pages &amp; Sheets\CreateDB</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DeployRptPage.cpp">
+      <Filter>Pages &amp; Sheets\Deploy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DeployRptThread.cpp">
+      <Filter>Pages &amp; Sheets\Deploy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConfigXMLData.cpp">
+      <Filter>Pages &amp; Sheets\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SelectServersPage.cpp">
+      <Filter>Pages &amp; Sheets\SelectServers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoftLibraryPage.cpp">
+      <Filter>Pages &amp; Sheets\SoftLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SoftLibraryThread.cpp">
+      <Filter>Pages &amp; Sheets\SoftLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DCOMPage.cpp">
+      <Filter>Pages &amp; Sheets\ConfigureDCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DCOMThread.cpp">
+      <Filter>Pages &amp; Sheets\ConfigureDCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CommandLineInfo.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConfigApp.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ReadWebFolderThread.cpp">
+      <Filter>Pages &amp; Sheets\SelectServers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegJobsThread.cpp">
+      <Filter>Pages &amp; Sheets\RegJobs</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegJobsPage.cpp">
+      <Filter>Pages &amp; Sheets\RegJobs</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegServicesThread.cpp">
+      <Filter>Pages &amp; Sheets\RegServices</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegServicesPage.cpp">
+      <Filter>Pages &amp; Sheets\RegServices</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CredentialsPage.cpp">
+      <Filter>Pages &amp; Sheets\Credentials</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CreateDBData.cpp">
+      <Filter>Pages &amp; Sheets\CreateDB</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegServicesData.cpp">
+      <Filter>Pages &amp; Sheets\RegServices</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RegJobsData.cpp">
+      <Filter>Pages &amp; Sheets\RegJobs</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplyScriptsPage.cpp">
+      <Filter>Pages &amp; Sheets\AppyScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ApplyScriptsThread.cpp">
+      <Filter>Pages &amp; Sheets\AppyScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CreateFolderPage.cpp">
+      <Filter>Pages &amp; Sheets\CreateFolder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\misc.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stdafx.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Constants.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConfigPage.h">
+      <Filter>Pages &amp; Sheets</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConfigSheet.h">
+      <Filter>Pages &amp; Sheets</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConfigThread.h">
+      <Filter>Pages &amp; Sheets</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WelcomePage.h">
+      <Filter>Pages &amp; Sheets\Welcome</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FinishPage.h">
+      <Filter>Pages &amp; Sheets\Finish</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CreateDBPage.h">
+      <Filter>Pages &amp; Sheets\CreateDB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CreateDBThread.h">
+      <Filter>Pages &amp; Sheets\CreateDB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DeployRptPage.h">
+      <Filter>Pages &amp; Sheets\Deploy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DeployRptThread.h">
+      <Filter>Pages &amp; Sheets\Deploy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConfigXMLData.h">
+      <Filter>Pages &amp; Sheets\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SelectServersPage.h">
+      <Filter>Pages &amp; Sheets\SelectServers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoftLibraryPage.h">
+      <Filter>Pages &amp; Sheets\SoftLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoftLibraryThread.h">
+      <Filter>Pages &amp; Sheets\SoftLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DCOMPage.h">
+      <Filter>Pages &amp; Sheets\ConfigureDCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DCOMThread.h">
+      <Filter>Pages &amp; Sheets\ConfigureDCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CommandLineInfo.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConfigApp.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ReadWebFolderThread.h">
+      <Filter>Pages &amp; Sheets\SelectServers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegJobsThread.h">
+      <Filter>Pages &amp; Sheets\RegJobs</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegJobsPage.h">
+      <Filter>Pages &amp; Sheets\RegJobs</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegServicesThread.h">
+      <Filter>Pages &amp; Sheets\RegServices</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegServicesPage.h">
+      <Filter>Pages &amp; Sheets\RegServices</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CredentialsPage.h">
+      <Filter>Pages &amp; Sheets\Credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CreateDBData.h">
+      <Filter>Pages &amp; Sheets\CreateDB</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegServicesData.h">
+      <Filter>Pages &amp; Sheets\RegServices</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegJobsData.h">
+      <Filter>Pages &amp; Sheets\RegJobs</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ApplyScriptsPage.h">
+      <Filter>Pages &amp; Sheets\AppyScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ApplyScriptsThread.h">
+      <Filter>Pages &amp; Sheets\AppyScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CreateFolderPage.h">
+      <Filter>Pages &amp; Sheets\CreateFolder</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\ocrcfg.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\res\Header.bmp">
+      <Filter>Resource Files\Res</Filter>
+    </None>
+    <None Include="resource\res\ocrcfg.ico">
+      <Filter>Resource Files\Res</Filter>
+    </None>
+    <None Include="resource\res\ocrcfg.rc2">
+      <Filter>Resource Files\Res</Filter>
+    </None>
+    <None Include="resource\res\Watermark.bmp">
+      <Filter>Resource Files\Res</Filter>
+    </None>
+    <None Include="resource\res\toolbar.bmp">
+      <Filter>Resource Files\Res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="resource\res\ocrcfg.manifest">
+      <Filter>Resource Files\Res</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="xml\ocrcfg.xml">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\AddUser.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\DropTrigger.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\AlterTables.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\CreateTables.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\ChangePath.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\ClearTables.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\ClearDeliceTechProcess.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xml\ClearRIOIPS.sql">
+      <Filter>Settings</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

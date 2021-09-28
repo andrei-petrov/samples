@@ -1,0 +1,751 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "wzr/include/Constants.h"
+#include "ocrcfg/include/Constants.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_OCRCFG_HEADER       BITMAP                  "res/header.bmp"
+
+IDB_OCRCFG_WATERMARK    BITMAP                  "res/watermark.bmp"
+
+IDB_OCRCFG_TOOLBAR16x16 BITMAP                  "res/toolbar.bmp"
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""wzr/include/Constants.h""\r\n"
+    "#include ""ocrcfg/include/Constants.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""cmn/resource/cmn.rc""\r\n"
+    "#include ""db/resource/db.rc""\r\n"
+    "#include ""rgs/resource/rgs.rc""\r\n"
+    "#include ""T/resource/T.rc""  \r\n"
+    "#include ""V/resource/V.rc""  \r\n"
+    "#include ""wzr/resource/wzr.rc""  \r\n"
+    "#include ""res/ocrcfg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_SAMCFG              ICON                    "res/ocrcfg.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDB_OCRCFG_TOOLBAR16x16 TOOLBAR 16, 16
+BEGIN
+    BUTTON      IDI_OCRCFG_INFORMATION
+    BUTTON      IDI_OCRCFG_WARNING
+    BUTTON      IDI_OCRCFG_ERROR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OCRCFG_WELCOME_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Приветствие"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Вас приветствует конфигуратор РИО ИПС",IDC_OCRCFG_WELCOME_STATIC_TITLE,115,7,193,38
+    LTEXT           "Что Вы желаете сделать?",IDC_STATIC,116,35,104,8
+    CONTROL         "Создать с нуля базы данных, задачи для SQL Agent, зарегистрировать службы",IDC_OCRCFG_WELCOME_RADIO_DEFAULTXML,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_GROUP | WS_TABSTOP,115,50,193,17
+    CONTROL         "Удалить службы, задачи для SQL agent, базы данных",IDC_OCRCFG_WELCOME_RADIO_SELECTSERVERS,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_TABSTOP,115,72,193,17
+    CONTROL         "Применить обновления баз данных",IDC_OCRCFG_WELCOME_RADIO_CONFIGXML,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_DISABLED | WS_TABSTOP,115,95,193,17
+    LTEXT           "Укажите файл с обновлениями:",IDC_STATIC,126,114,107,8
+    EDITTEXT        IDC_OCRCFG_WELCOME_EDIT_CONFIGFILEPATH,126,127,128,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Обзор...",IDC_OCRCFG_WELCOME_BUTTON_BROWSE,260,127,50,14
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,115,180,184,8
+END
+
+IDD_OCRCFG_CREDENTIALS_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Учетная запись для базы и служб РИО ИПС"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Windows логин в форме domain\\name",IDC_STATIC,21,1,266,8
+    EDITTEXT        IDC_OCRCFG_CREDENTIALS_EDIT_LOGIN,21,13,216,14,ES_AUTOHSCROLL
+	PUSHBUTTON      "Выбрать...", IDC_OCRCFG_CREDENTIALS_BUTTON_SELECT, 245, 13, 50, 14
+    LTEXT           "Пароль",IDC_STATIC,21,34,266,8
+    EDITTEXT        IDC_OCRCFG_CREDENTIALS_EDIT_PASSWORD,21,46,274,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "&Пропустить регистрацию служб РИО ИПС",IDC_WZR_CHECK_SKIP,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,21,99,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,112,275,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | WS_BORDER,21,125,275,6
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8,NOT WS_VISIBLE    
+END
+
+IDD_OCRCFG_CREATEFOLDER_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Создание папки проекта РИО ИПС"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Папка проекта распознавания, обычно с:\\server",IDC_STATIC,21,1,266,8
+    EDITTEXT        IDC_OCRCFG_CREATEFOLDER_EDIT_PROJECT_FOLDER,21,13,220,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Выбрать...",IDC_OCRCFG_CREATEFOLDER_BUTTON_BROWSE_PROJECT,245,13,50,14
+	LTEXT           "Папка с исходными изображениями, обычно с:\\scans", IDC_STATIC, 21, 41, 266, 8
+	EDITTEXT        IDC_OCRCFG_CREATEFOLDER_EDIT_SCANS_FOLDER, 21, 53, 220, 14, ES_AUTOHSCROLL | ES_READONLY
+	PUSHBUTTON      "Выбрать...", IDC_OCRCFG_CREATEFOLDER_BUTTON_BROWSE_SCANS, 245, 53, 50, 14
+
+    CONTROL         "&Пропустить создание папки",IDC_WZR_CHECK_SKIP,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,21,99,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,112,275,8,NOT WS_VISIBLE
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",NOT WS_VISIBLE | WS_BORDER,21,125,275,6
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8,NOT WS_VISIBLE
+END
+
+IDD_OCRCFG_CREATEDB_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Создание базы данных"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "SQL Server",IDC_STATIC,21,3,54,8
+    COMBOBOX        IDC_OCRCFG_CREATEDB_COMBO_SQLSERVER,84,1,212,30,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_TABSTOP
+    LTEXT           "База данных 1",IDC_STATIC,21,23,53,8
+    EDITTEXT        IDC_OCRCFG_CREATEDB_EDIT_DATABASE,84,20,212,14,ES_AUTOHSCROLL
+    LTEXT           "База данных 2",IDC_STATIC,21,43,53,8
+    EDITTEXT        IDC_OCRCFG_CREATEDB_EDIT_DATABASE_2,84,40,212,14,ES_AUTOHSCROLL
+    LTEXT           "Статус базы данных",IDC_WZR_STATIC_STATUS,21,85,273,8,NOT WS_VISIBLE
+    ICON            "",IDC_WZR_ICON,21,55,21,20
+    CONTROL         "&Пропустить создание баз(ы)",IDC_WZR_CHECK_SKIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,99,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,112,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,125,275,6
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+END
+
+IDD_OCRCFG_APPLYSCRIPTS_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Выполнение скриптов"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Список скрптов",IDC_STATIC,21,1,266,8
+    LISTBOX         IDC_OCRCFG_APPLYSCRIPTS_LIST,21,13,274,81,LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Статус выполения",IDC_WZR_STATIC_STATUS,21,85,273,8,NOT WS_VISIBLE
+    CONTROL         "&Пропустить выполнение скриптов",IDC_WZR_CHECK_SKIP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,99,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,112,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,125,275,6
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+END
+
+IDD_OCRCFG_REGJOBS_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Создание заданий"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Список заданий для SQL Agent",IDC_STATIC,21,1,266,8
+    LISTBOX         IDC_OCRCFG_REGJOBS_LIST,21,13,274,81,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    CONTROL         "&Пропустить создание заданий.",IDC_WZR_CHECK_SKIP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,99,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,112,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,125,275,6
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+END
+
+IDD_OCRCFG_REGSVC_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Регистрация служб и приложений РИО ИПС"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Список служб и приложений",IDC_STATIC,21,1,266,8
+    LISTBOX         IDC_OCRCFG_REGSVC_LIST,21,13,274,81,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    CONTROL         "&Пропустить регистрацию служб и приложений РИО ИПС",IDC_WZR_CHECK_SKIP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,99,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,112,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,125,275,6
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+END
+
+IDD_OCRCFG_DEPLOYRPT_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Установка отчетов"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "URL сервера отчетов",IDC_STATIC,21,3,80,8
+    COMBOBOX        IDC_OCRCFG_DEPLOYRPT_COMBO_REPORTSERVER,103,1,193,30,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_TABSTOP
+    LTEXT           "Web каталог отчетов",IDC_STATIC,21,23,78,8
+    EDITTEXT        IDC_OCRCFG_DEPLOYRPT_EDIT_FOLDER,103,20,193,14,ES_AUTOHSCROLL
+    CONTROL         "&Пропустить публикацию отчетов.",IDC_WZR_CHECK_SKIP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,93,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,106,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,115,275,14
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+    LTEXT           "Статус:",IDC_WZR_STATIC_STATUS,21,71,275,16
+    ICON            IDD_OCRCFG_CREATEDB_PAGE,IDC_WZR_ICON,21,46,20,20,NOT WS_VISIBLE
+END
+
+IDD_OCRCFG_FINISH_PAGE DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Завершение"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Конфигуратор системы РИО ИПС завершил работу.",IDC_OCRCFG_FINISH_STATIC_TITLE,115,7,191,38
+    LTEXT           "Дополнительно:",IDC_OCRCFG_FINISH_ADDITIONAL,115,50,131,8
+    EDITTEXT        IDC_OCRCFG_FINISH_EDIT_INFO,115,62,195,110,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+    CONTROL         "&Удалить РИО ИПС",IDC_OCRCFG_FINISH_CHECK_UNINSTALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,176,190,10
+END
+
+IDD_OCRCFG_SELECTSERVERS_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Выбор серверов"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "SQL Server",IDC_STATIC,21,7,81,8
+    COMBOBOX        IDC_OCRCFG_SELECTSERVERS_COMBO_SQLSERVER,103,5,193,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "База данных",IDC_STATIC,21,23,79,8
+    COMBOBOX        IDC_OCRCFG_SELECTSERVERS_COMBO_DATABASE,103,21,193,114,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "URL сервера отчетов",IDC_STATIC,21,39,82,8
+    COMBOBOX        IDC_OCRCFG_SELECTSERVERS_COMBO_REPORTSERVER,103,37,193,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Web каталог отчетов",IDC_STATIC,21,55,78,8
+    COMBOBOX        IDC_OCRCFG_SELECTSERVERS_COMBO_FOLDER,103,53,193,114,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Пропустить выбор.",IDC_WZR_CHECK_SKIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,93,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,106,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,115,275,14
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+    LTEXT           "Статус: ",IDC_WZR_STATIC_STATUS,21,70,275,16
+END
+
+IDD_OCRCFG_SOFTLIBRARY_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Библиотека ПО"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "SQL Server",IDC_STATIC,21,3,54,8
+    COMBOBOX        IDC_OCRCFG_SOFTLIBRARY_COMBO_SQLSERVER,84,1,212,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "База данных",IDC_STATIC,21,23,53,8
+    EDITTEXT        IDC_OCRCFG_SOFTLIBRARY_EDIT_DATABASE,84,20,212,14,ES_AUTOHSCROLL
+    CONTROL         "Экспортировать библиотеку ПО из базы данных в файл",IDC_OCRCFG_SOFTLIBRARY_RADIO_EXPORT,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_GROUP | WS_TABSTOP,21,42,271,12
+    CONTROL         "Импортировать библиотеку ПО из файла в базу данных",IDC_OCRCFG_SOFTLIBRARY_RADIO_IMPORT,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_TABSTOP,21,56,272,12
+    LTEXT           "Файл:",IDC_STATIC,21,75,23,8
+    EDITTEXT        IDC_OCRCFG_SOFTLIBRARY_EDIT_XMLFILEPATH,47,73,195,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Обзор...",IDC_OCRCFG_SOFTLIBRARY_BUTTON_BROWSE,246,73,50,14
+    CONTROL         "&Пропустить импорт библиотеки ПО.",IDC_WZR_CHECK_SKIP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,92,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,106,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,115,275,14
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+END
+
+IDD_OCRCFG_DCOM_PAGE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Настройка доступа к серверу"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Введите учетную запись, для которой будет разрешен доступ",IDC_STATIC,21,1,266,8
+    EDITTEXT        IDC_OCRCFG_DCOM_EDIT_LOGIN,21,13,274,14,ES_AUTOHSCROLL
+    CONTROL         "&Пропустить конфигурацию.",IDC_WZR_CHECK_SKIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,93,274,10
+    LTEXT           "Прогресс:",IDC_WZR_STATIC_STAGE,21,106,275,8
+    CONTROL         "",IDC_WZR_PROGRESS,"msctls_progress32",WS_BORDER,21,115,275,14
+    LTEXT           "Для продолжения нажмите Далее.",IDC_WZR_CLICK_NEXT,21,134,275,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_OCRCFG_MANIFEST     BINARY                  "res\\ocrcfg.manifest"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_OCRCFG_WELCOME_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        VERTGUIDE, 126
+        VERTGUIDE, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 126
+        HORZGUIDE, 141
+        HORZGUIDE, 156
+    END
+
+    IDD_OCRCFG_CREDENTIALS_PAGE, DIALOG
+    BEGIN
+    END
+
+    IDD_OCRCFG_CREATEFOLDER_PAGE, DIALOG
+    BEGIN
+    END
+
+    IDD_OCRCFG_CREATEDB_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 21
+        RIGHTMARGIN, 296
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_OCRCFG_REGJOBS_PAGE, DIALOG
+    BEGIN
+    END
+
+    IDD_OCRCFG_REGSVC_PAGE, DIALOG
+    BEGIN
+    END
+
+    IDD_OCRCFG_DEPLOYRPT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 21
+        RIGHTMARGIN, 296
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_OCRCFG_FINISH_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_OCRCFG_SELECTSERVERS_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 21
+        RIGHTMARGIN, 296
+        VERTGUIDE, 103
+        VERTGUIDE, 295
+        VERTGUIDE, 296
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 142
+        HORZGUIDE, 11
+        HORZGUIDE, 27
+        HORZGUIDE, 43
+        HORZGUIDE, 59
+        HORZGUIDE, 78
+    END
+
+    IDD_OCRCFG_SOFTLIBRARY_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 21
+        RIGHTMARGIN, 296
+    END
+
+    IDD_OCRCFG_DCOM_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 21
+        RIGHTMARGIN, 296
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 142
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_OCRCFG_CREATEDB_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OCRCFG_WELCOME_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OCRCFG_REGSVC_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OCRCFG_CREDENTIALS_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OCRCFG_CREATEFOLDER_PAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_APP_TITLE    " "
+    IDS_OCRCFG_CREDENTIALS_TITLE "Учетная запись Windows"
+    IDS_OCRCFG_CREDENTIALS_SUBTITLE 
+                            "Должна иметь полномочия для регистрации служб, для создания баз данных и заданий на SQL Server"
+    IDS_OCRCFG_CREATEFOLDER_TITLE "Папки для проекта распознавания и для исходных изображений"
+    IDS_OCRCFG_CREATEFOLDER_SUBTITLE 
+                            "В папках будут созданы подпапки проекта и настроен сетевой доступ как \\\\localhost\\server, \\\\localhost\\scans"
+    IDS_OCRCFG_CREATEDB_TITLE "Создание баз данных"
+    IDS_OCRCFG_CREATEDB_SUBTITLE 
+                            "Задайте расположение баз данных на локальном или сетевом SQL сервере. Имя вводится в формате ComputerName\\ServiceName."
+    IDS_OCRCFG_DELETEDB_TITLE "Удаление баз данных"
+    IDS_OCRCFG_DELETEDB_SUBTITLE 
+                            "Дождитесь пока базы и их файлы будут удалены."
+    IDS_OCRCFG_APPLYSCRIPTS_TITLE "Применение скриптов к базам данных"
+    IDS_OCRCFG_APPLYSCRIPTS_SUBTITLE 
+                            "Скрипты создают и модифицируют объекты в базах данных."
+    IDS_OCRCFG_REGJOBS_TITLE "Создание заданий для SQL Agent"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_REGJOBS_SUBTITLE 
+                            "Будут созданы задания для службы SQL Agent на локальном или сетевом SQL сервере."
+    IDS_OCRCFG_UNREGJOBS_TITLE "Удаление заданий для SQL Agent"
+    IDS_OCRCFG_UNREGJOBS_SUBTITLE 
+                            "Будут удалены задания для службы SQL Agent на локальном или сетевом SQL сервере."
+    IDS_OCRCFG_REGSVC_TITLE "Регистрация служб и приложений РИО ИПС"
+    IDS_OCRCFG_REGSVC_SUBTITLE 
+                            "Будет произведена регистрация выбранных служб и приложений с заданными учетными данными"
+    IDS_OCRCFG_UNREGSVC_TITLE "Удаление служб и приложений РИО ИПС"
+    IDS_OCRCFG_UNREGSVC_SUBTITLE 
+                            "Будет произведена остановка и дерегистрация служб и приложений по списку"
+    IDS_OCRCFG_DEPLOYRPT_TITLE "Публикация отчетов"
+    IDS_OCRCFG_DEPLOYRPT_SUBTITLE 
+                            "Задайте расположение папки с отчетами на локальном сервере отчетов (ReportServer$SQLExpress) или на ином экземпляре MS Reporting Services."
+    IDS_OCRCFG_SOFTLIBRARY_TITLE "Экспорт/импорт библиотеки ПО"
+    IDS_OCRCFG_SOFTLIBRARY_SUBTITLE 
+                            "Процедуры экспорта библиотеки программного обеспечения в файл XML и импорта из него."
+    IDS_OCRCFG_SELECTSERVERS_TITLE "Выбор серверов"
+    IDS_OCRCFG_SELECTSERVERS_SUBTITLE 
+                            "Укажите место расположения базы данных и WEB каталога с отчетами."
+    IDS_OCRCFG_DCOM_TITLE   "Настройка доступа к серверу"
+    IDS_OCRCFG_DCOM_SUBTITLE 
+                            "Будут произведены настройки для удаленного доступа к серверу по протоколу DCOM"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_PROGRESS     "Прогресс:"
+    IDS_OCRCFG_QUERY_CANCEL "Вы уверены, что хотите прекратить конфигурирование системы РИО ИПС?"
+    IDS_OCRCFG_PARSE_STRING_SIZE "Please enter at least 1 character."
+    IDS_OCRCFG_XMLCONFIG_DEFEXT ".xml"
+    IDS_OCRCFG_XMLCONFIG_FILTER "Файл XML (*.xml)|*.xml||"
+    IDS_OCRCFG_REPORTPACK_FILTER 
+                            "Архив ReportPack (*.zip)|*.zip|Конфигурационный файл (*.xml)|*.xml||"
+    IDS_OCRCFG_XML_CONFIG_PRODUCT_VERSION_MSG1 
+                            "\n\nВерсия указанная в файле: "
+    IDS_OCRCFG_XML_CONFIG_PRODUCT_VERSION_MSG2 "\nТекущая версия: "
+    IDS_OCRCFG_LOGON_AS_SERVICE_PERMISSION_GRANTED 
+                            "Учетной записи '%1' предоставлены права логиниться как служба Windows."
+    IDS_OCRCFG_PROJECT_FOLDER_CHOOSEN 
+                            "Папка '%1' выбрана в качестве папки проекта сканирования. Она доступна по сети. В ней созданы подпапки."
+	IDS_OCRCFG_SCANS_FOLDER_CHOOSEN
+							"Папка '%1' выбрана в качестве папки c исходными изображениями. Она доступна по сети."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_DB_CREATE_PROCESS "Идет создание баз и раздача прав..."
+    IDS_OCRCFG_DB_REMOVE_PROCESS "Идет удаление баз данных и их файлов..."
+    IDS_OCRCFG_DB_RECREATE_QUESTION 
+                            "На SQL сервере '%2' уже существют базы: %1. \r\nХотите пересоздать?"
+    IDS_OCRCFG_DB_ALREADY_INSTALLED "База данных уже существует."
+    IDS_OCRCFG_DB_NOT_INSTALLED "База данных не существует."
+    IDS_OCRCFG_DB_UNDEFINED "Невозможно определить существует ли база."
+    IDS_OCRCFG_DB_CREATED   "База данных '%1' была создана на SQL сервере '%2'."
+    IDS_OCRCFG_DB_REMOVED   "База данных '%1' была удалена с SQL сервера '%2'."
+    IDS_OCRCFG_DB_USE       "Будет использоваться база '%1' на SQL сервере '%2'."
+    IDS_OCRCFG_DB_GRANTED   "Учетной записи '%1' даны административные права на базу '%2'."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_DB_SCRIPTS_APPLIED 
+                            "Для базы '%1' выполнены скрипты (%2!d! шт.)."
+    IDS_OCRCFG_DB_GRANT_ERROR 
+                            "Ошибка выдачи административных прав учетной записи '%1' на базу '%2' - %3."
+    IDS_OCRCFG_DB_SKIP_STEP "Имя сервера или базы данных было изменено.\r\nКнопка Next блокирована, т.к. выбран пропуск шага.\r\n\r\nЕсли вам необходимо подключится к другой существующей базе или серверу отчетов, вернитесь на шаг назад, и выберите соответствущий режим."
+    IDS_OCRCFG_DB_EMPTY_FIELD 
+                            "Кнопка Next блокирована, т.к. не заполненны все имена"
+    IDS_OCRCFG_SCRIPT_EXECUTION_PROCESS "Идет выполнение скриптов... "
+    IDS_OCRCFG_JOBS_CREATE_PROCESS "Идет создание заданий для SQL Agent..."
+    IDS_OCRCFG_JOBS_REMOVE_PROCESS "Идет удаление заданий для SQL Agent..."
+    IDS_OCRCFG_JOBS_RECREATE_QUESTION 
+                            "На SQL сервере '%2' уже существуют задания: %1. \r\n Хотите пересоздать?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_JOBS_CREATED "На SQL сервере '%s' создано заданий: %i."
+    IDS_OCRCFG_JOBS_REMOVED "На SQL сервере '%s' удалено заданий: %i."
+    IDS_OCRCFG_SVC_CREATE_PROCESS "Идет регистрация и запуск служб РИО ИПС..."
+    IDS_OCRCFG_SVC_REMOVE_PROCESS 
+                            "Идет остановка и дерегистрация служб РИО ИПС..."
+    IDS_OCRCFG_SVC_RECREATE_QUESTION 
+                            "На компьютере '%2' уже существуют службы: '%1'. \r\n Хотите пересоздать?"
+    IDS_OCRCFG_SVC_CREATED  "На компьютере '%s' зарегистрировано служб и приложений РИО ИПС: %i."
+    IDS_OCRCFG_SVC_REMOVED  "На компьютере '%s' дерегистрировано служб и приложений РИО ИПС: %i."
+    IDS_OCRCFG_RPT_SEARCH_PROCESS 
+                            "Идет поиск экземпляров Reporting Services, подождите..."
+    IDS_OCRCFG_RPT_SEARCH_COMPLETED 
+                            "Поиск экземпляров Reporting Services завершен."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_RPT_SEARCH_FAILED 
+                            "Экземпляры Reporting Services не найдены, в выпадающем списке нажмите <Поиск...>."
+    IDS_OCRCFG_RPT_SEARCH_FAILED_WAIT 
+                            "Экземпляры Reporting Services не найдены. Подождите, будет поставленно имя по умолчанию"
+    IDS_OCRCFG_RPT_DEPLOY_PROCESS "Идет создание отчётов в папке '%1'..."
+    IDS_OCRCFG_RPT_WAIT     "Идет соединение с сервером отчетов, это может занять несколько минут..."
+    IDS_OCRCFG_RPT_DEPLOY_QUESTION 
+                            "В папке '%1' на сервере '%2' уже есть отчет(ы):\r\n'%3'.\r\nПерезаписать их?"
+    IDS_OCRCFG_RPT_ALREADY_INSTALLED "Папка с отчетами уже существует"
+    IDS_OCRCFG_RPT_NOT_INSTALLED "Папка с отчетами не существует"
+    IDS_OCRCFG_RPT_UNDEFINED 
+                            "Невозможно определить, существует ли папка с отчетами"
+    IDS_OCRCFG_RPT_RESULTS  "В папке '%s' на сервере '%s' опубликованы следующие отчеты:\r\n%sОпубликовано отчетов: %d."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_RPT_USE      "Будут использоваться отчеты из папки '%s' на сервере '%s'."
+    IDS_OCRCFG_SOFTLIBRARY_EXPORT_PROCESS "Идет экспорт библиотеки ПО"
+    IDS_OCRCFG_SOFTLIBRARY_IMPORT_PROCESS "Идет импорт библиотеки ПО: "
+    IDS_OCRCFG_SOFTLIBRARY_EXPORT_RESULTS 
+                            "Библиотека ПО успешно экспортирована в файл %s"
+    IDS_OCRCFG_SOFTLIBRARY_IMPORT_RESULTS 
+                            "Библиотека ПО успешно импортирована из файлов: %s"
+    IDS_OCRCFG_LIBRARY_IMPORT_FILE_SUCCESS "Успешно"
+    IDS_OCRCFG_LIBRARY_IMPORT_FILE_FAILED "Ошибка"
+    IDS_OCRCFG_EDIT_IMPORT_PATH 
+                            "Редактирование строки позволяет указать путь только к одному файлу!\r\nДля указания нескольких файлов используйте кнопку ""Обзор""."
+    IDS_OCRCFG_SELECTSERVERS_SEARCHING_REPORTSERVERS_DB 
+                            "Идет поиск экземпляров Reporting Services и БД SQL, подождите..."
+    IDS_OCRCFG_SELECTSERVERS_SEARCHING_REPORTSERVERS 
+                            "Идет поиск экземпляров Reporting Services, подождите..."
+    IDS_OCRCFG_SELECTSERVERS_SEARCHING_DB 
+                            "Идет поиск баз данных SQL, подождите..."
+    IDS_OCRCFG_SELECTSERVERS_SEARCHING_DB_WEBFOLDERS 
+                            "Идет поиск баз данных SQL и WEB каталогов, подождите..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_SELECTSERVERS_SEARCHING_WEBFOLDERS 
+                            "Идет поиск WEB каталогов, подождите..."
+    IDS_OCRCFG_SELECTSERVERS_SEARCH_COMPLETED "Поиск завершен."
+    IDS_OCRCFG_SELECTSERVERS_ENTER_DBNAME 
+                            "Поиск завершен, введите имя базы данных вручную."
+    IDS_OCRCFG_SELECTSERVERS_ENTER_DBNAME_WEBFOLDER 
+                            "Поиск завершен, введите имена БД и WEB каталога вручную."
+    IDS_OCRCFG_SELECTSERVERS_ENTER_WEBFOLDER 
+                            "Поиск завершен, введите имя WEB каталога вручную."
+    IDS_OCRCFG_SELECTSERVERS_ENTER_REPORTSERVER_WEBFOLDER 
+                            "Поиск завершен, введите URL Reporting Services и имя WEB каталога вручную."
+    IDS_OCRCFG_SELECTSERVERS_ENTER_REPORTSERVER 
+                            "Поиск завершен, введите URL Reporting Services вручную."
+    IDS_OCRCFG_SELECTSERVERS_ENTER_NAMES 
+                            "Поиск завершен, введите имена вручную."
+    IDS_OCRCFG_SELECTSERVERS_WEBFOLDER_ACCESS_DENIED 
+                            "Web каталог не найден - отказано в доступе."
+    IDS_OCRCFG_SELECTSERVERS_GETRPTMAN_FAIL 
+                            "Не удалось получить указатель на объект RptMan."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_DCOM_COMMON_PROCESS 
+                            "Общие настройки DCOM и права доступа к серверу"
+    IDS_OCRCFG_DCOM_POLICY_PROCESS "Настройка политики безопасности"
+    IDS_OCRCFG_DCOM_FIREWALL_PROCESS "Настройка Windows Firewall"
+    IDS_OCRCFG_DCOM_CONFIGURE_RESULTS 
+                            "Настройки удаленного доступа к серверу успешно произведены для заданной учетной записи."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OCRCFG_DCOM_REMOTE_ADMIN_ERROR 
+                            "Не удалось настроить исключение Firewall - разрешить службу Remote Administration"
+    IDS_OCRCFG_DCOM_OPEN_PORT_ERROR 
+                            "Не удалось настроить исключение Firewall - открыть порт %d"
+    IDS_OCRCFG_DCOM_FIREWALL_EXCEPTION_APP_ERROR 
+                            "Не удалось добавить программу '%1' в список исключений Firewall"
+    IDS_OCRCFG_DCOM_GLOBAL_POLICY_WARNING 
+                            "Внимание! Настройки безопасности групповой политики могут перекрывать сделанные настройки"
+    IDS_OCRCFG_SETCONFIGXML_TITLE "Выбор конфигурационного файла"
+    IDS_OCRCFG_SETCONFIGXML_SUBTITLE 
+                            "Укажите конфигурационный файл, содержащий инструкции для выполнения конфигуратором системы РИО ИПС"
+    IDS_OCRCFG_FINISH_RESULTS "Не было сделано никаких изменений."
+END
+
+STRINGTABLE
+BEGIN
+    IDE_RPTMAN_LOAD_ERROR   "Не удалось загрузить COM-сервер для работы с отчетами 'rptman.dll'"
+    IDE_REFRESH_ERROR       "Обновить не удалось"
+    IDE_EMPTY_DATABASE_NAME "Ошибка! Не задано имя базы данных."
+    IDE_EMPTY_REPORTS_FOLDER_NAME "Ошибка! Не задана папка отчетов."
+    IDE_FILEOPERATION_ERROR "%s %s"
+    IDE_CREATE_XML_NODE_ERROR "Не удалось создать элемент в XML-документе"
+    IDE_LOAD_LIBRARY_FORMAT_ERROR 
+                            "Неправильный формат XML файла библиотеки ПО"
+    IDE_LOAD_LIBRARY_EMPTY_PUBLISHERS_LIST "Список производителей ПО пуст"
+    IDE_DCOM_LOGIN_NOT_EXISTS "Учетной записи не существует"
+    IDE_DCOM_LOGIN_EMPTY    "Ошибка! Не задан логин."
+    IDE_OCRCFG_XML_CONFIG_PRODUCT_VERSION_UNKNOW_MSG1 
+                            "В файле конфигурации не указана версия программы:\n"
+    IDE_OCRCFG_XML_CONFIG_PRODUCT_VERSION_UNKNOW_MSG2 
+                            "\n\nОтчеты предназначенные для более ранней версии могут не работать!"
+    IDE_OCRCFG_XML_CONFIG_PRODUCT_VERSION_ERROR 
+                            "Файл конфигурации предназначен для другой версии:\n"
+    IDE_OCRCFG_LIBRARY_IMPORT_FILE 
+                            "Не удалось импортировать файл Библиотеки ПО:\r\n"
+    IDE_OCRCFG_SERVER_STOPPED_TIMEOUT_EXPIRED "Ошибка остановки сервера"
+    IDE_OCRCFG_SERVER_DB_CREATOR_IS_UNKNOWN 
+                            "База данных %s, вероятно, создана сторонним программным обеспечением. Отсутствует таблица или процедура %s. Введите другое имя базы."
+END
+
+STRINGTABLE
+BEGIN
+    IDE_OCRCFG_SERVER_INT_SERVICES_NOT_INSTALLED 
+                            "SQL Server '%s': службы Integration Services не установлены"
+    IDE_OCRCFG_SERVER_INT_SERVICES_NOT_RUNNING 
+                            "SQL Server '%s': службы Integration Services не запущены"
+    IDE_OCRCFG_LOGON_AS_SERVICE_PERMISSION_GRANT_ERROR 
+                            "Не получилось предоставить учетной записи %s права логиниться как служба Windows."
+    IDE_OCRCFG_FOLDER_SHARE_FAILED 
+                            "Ошибка при создании разделяемой папки '%s' "
+    IDE_OCRCFG_SUBFOLDERS_CREATION_FAILED 
+                            "Ошибка при создании подпапок для папки '%s' "
+    IDE_OCRCFG_SERVER_JOBS_ABSENT "SQL Server job '%s' отсутствует."
+    IDE_OCRCFG_SERVICE_NOT_STARTED 
+                            "Служба '%s' не зарегистрировалась и/или не запустилась."
+END
+
+STRINGTABLE
+BEGIN
+    IDE_OCRCFG_RPT_FILE_NOT_FOUND "Файл '%1' не найден"
+    IDE_OCRCFG_ERROR_CREATE_SEARCH_DIALOG 
+                            "Не удалось создать диалог для поиска sql серверов"
+    IDE_OCRCFG_ERROR_CREATE_RPT_SEARCH_DIALOG 
+                            "Не удалось создать диалог для поиска репорт серверов"
+    IDE_OCRCFG_ERROR_STRING "%1"
+    IDE_OCRCFG_ERROR_RECIEVE_POINTER 
+                            "Ошибка получения указателя на объект приложения"
+    IDE_OCRCFG_INCORRECT_INPUT "Некорректный ввод"
+    IDE_OCRCFG_FIELD_SERVER_IS_EMPTY "Поле с именем сервера не заполненно"
+    IDE_OCRCFG_POINTER_TO_INT_IS_NULL 
+                            "В %1 передан пустой указатель на переменную с типом int"
+    IDE_OCRCFG_SECOND_INSTANCE 
+                            "Один экземпляр конфигуратора уже запущен.\nДва экземпляра конфигуратора не могут быть запущены одновременно"
+    IDE_OCRCFG_SERVER_VERSION_TOO_OLD 
+                            "SQL Server '%s': нужна версия не ниже, чем 2017."
+    IDE_OCRCFG_SERVER_COLLATION_NOT_CYRILLIC 
+                            "SQL Server '%s': Collation type is not Cyrillic_General_CI_AS."
+    IDE_OCRCFG_SERVER_STD_ENT_ONLY 
+                            "SQL Server '%s': поддерживаются только редакции Standard или Enterprise."
+    IDE_OCRCFG_SERVER_INEGRATED_SEC_ONLY 
+                            "SQL Server '%s': не включен режим Mixed authentication mode."
+    IDE_OCRCFG_SERVER_FULLTEXTSEARCH_NOT_INSTALLED 
+                            "SQL Server '%s': подсистема FullTextSearch на SQL Server '%s' не установлена."
+    IDE_OCRCFG_SERVER_DATABASEMAIL_NOT_INSTALLED 
+                            "SQL Server '%s': подсистема DatabaseMail не сконфигурирована или не запущена."
+END
+
+STRINGTABLE
+BEGIN
+    IDE_OPENING_CONFIGXML_ERROR 
+                            "Файл '%s' не является конфигурационным файлом конфигуратора системы РИО ИПС"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Конфигуратор системы РИО ИПС"
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "cmn/resource/cmn.rc"
+#include "db/resource/db.rc"
+#include "rgs/resource/rgs.rc"
+#include "T/resource/T.rc"  
+#include "V/resource/V.rc"  
+#include "wzr/resource/wzr.rc"  
+#include "res/ocrcfg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

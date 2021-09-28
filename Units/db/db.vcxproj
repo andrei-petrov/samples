@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{270676DD-FBBF-42A2-8713-AAAB5D439B91}</ProjectGuid>
+    <RootNamespace>db</RootNamespace>
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</EnableManagedIncrementalBuild>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>resource;..;../../include;../atl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_BUILD_CMNLIB;_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>Source;..;../..;../../Res;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>resource;..;../../include;../atl/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_BUILD_CMNLIB;NDEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>Source;..;../..;../../Res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ConnectionHolder.cpp" />
+    <ClCompile Include="source\ConnectionPool.cpp" />
+    <ClCompile Include="source\DBExporter.cpp" />
+    <ClCompile Include="source\SqlBrowser.cpp" />
+    <ClCompile Include="source\Storage.cpp" />
+    <ClCompile Include="Source\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConnectionHolder.h" />
+    <ClInclude Include="include\ConnectionPool.h" />
+    <ClInclude Include="include\DBExporter.h" />
+    <ClInclude Include="include\SqlBrowser.h" />
+    <ClInclude Include="include\Storage.h" />
+    <ClInclude Include="include\Constants.h" />
+    <ClInclude Include="include\db.h" />
+    <ClInclude Include="Source\stdafx.h" />
+    <ClInclude Include="Resource\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\db.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\DefaultPicture.JPG" />
+    <None Include="Resource\resource.hm" />
+    <None Include="sql\AddChipsetLibrary.sql" />
+    <None Include="sql\AddInitialData.sql" />
+    <None Include="sql\AddInitialObjects.sql" />
+    <None Include="sql\AddLibrary.sql" />
+    <None Include="sql\ClearDB.sql" />
+    <None Include="sql\CreateCategory.sql" />
+    <None Include="sql\CreateComputerLink.sql" />
+    <None Include="sql\CreateDB.sql" />
+    <None Include="sql\CreateHardwareLicenseRule.sql" />
+    <None Include="sql\CreateHardwareLicenseRuleLink.sql" />
+    <None Include="sql\CreateLibProductFile.sql" />
+    <None Include="sql\CreateLicenseImage.sql" />
+    <None Include="sql\CreateLicenseRule.sql" />
+    <None Include="sql\CreateLicenseRuleLink.sql" />
+    <None Include="sql\CreateObjectRelationViews.sql" />
+    <None Include="sql\CreatePassport.sql" />
+    <None Include="sql\CreatePassportLink.sql" />
+    <None Include="sql\CreateProhibitionRule.sql" />
+    <None Include="sql\CreatePublisher.sql" />
+    <None Include="sql\CreateSoftType.sql" />
+    <None Include="sql\CreateSubdivision.sql" />
+    <None Include="sql\CreateSynonym.sql" />
+    <None Include="sql\CreateTables.sql" />
+    <None Include="sql\CreateTask.sql" />
+    <None Include="sql\CreateViewComputer.sql" />
+    <None Include="sql\CreateViewComputerPassports.sql" />
+    <None Include="sql\CreateViewFileInstallation.sql" />
+    <None Include="sql\CreateViewFoundProductFile.sql" />
+    <None Include="sql\CreateViewHardInstallation.sql" />
+    <None Include="sql\CreateViewHardwareLicenseRule.sql" />
+    <None Include="sql\CreateViewInstallation.sql" />
+    <None Include="sql\CreateViewLastComputerInsp.sql" />
+    <None Include="sql\CreateViewLastSuccessComputerInsp.sql" />
+    <None Include="sql\CreateViewLibProductFile.sql" />
+    <None Include="sql\CreateViewLicenseRule.sql" />
+    <None Include="sql\CreateViewMaxComputerAction.sql" />
+    <None Include="sql\CreateViewMaxFilesSearchComputerAction.sql" />
+    <None Include="sql\CreateViewMaxProgramsSearchComputerAction.sql" />
+    <None Include="sql\CreateViewPassportHardwareLicenseRules.sql" />
+    <None Include="sql\CreateViewPassportLicenseRules.sql" />
+    <None Include="sql\CreateViewProhibitionRule.sql" />
+    <None Include="sql\CreateViews.sql" />
+    <None Include="sql\CreateViewSoft.sql" />
+    <None Include="sql\CreateViewSoftType.sql" />
+    <None Include="sql\CreateViewSynonym.sql" />
+    <None Include="sql\CreateViewTaskComputers.sql" />
+    <None Include="sql\DeleteObject.sql" />
+    <None Include="sql\DeleteOldActions.sql" />
+    <None Include="sql\GetAllHardChanges.sql" />
+    <None Include="sql\GetAllSoftChanges.sql" />
+    <None Include="sql\GetCharGuid.sql" />
+    <None Include="sql\GetComputerCredentials.sql" />
+    <None Include="sql\GetComputerHard.sql" />
+    <None Include="sql\GetComputerOS.sql" />
+    <None Include="sql\GetComputerOSList.sql" />
+    <None Include="sql\GetComputersFromOldDB.sql" />
+    <None Include="sql\GetComputerSoft.sql" />
+    <None Include="sql\GetCompWithDefiniteSecurity.sql" />
+    <None Include="sql\GetCompWithSecurity.sql" />
+    <None Include="sql\GetCorrectedUTCTimeTo.sql" />
+    <None Include="sql\GetDataFromOldDB.sql" />
+    <None Include="sql\GetDefiniteInspectionFileCheck.sql" />
+    <None Include="sql\GetDeviceList.sql" />
+    <None Include="sql\GetExtendDeviceDesc.sql" />
+    <None Include="sql\GetFileCheck.sql" />
+    <None Include="sql\GetFrequencyFromProcessorName.sql" />
+    <None Include="sql\GetFullVersion.sql" />
+    <None Include="sql\GetHardwareChanges.sql" />
+    <None Include="sql\GetHardwarePassportCheck.sql" />
+    <None Include="sql\GetInspectedComputers.sql" />
+    <None Include="sql\GetInspectionsFromOldDB.sql" />
+    <None Include="sql\GetLanguage.sql" />
+    <None Include="sql\GetLibraryFromOldDB.sql" />
+    <None Include="sql\GetLibraryXML.sql" />
+    <None Include="sql\GetMajorVersionFromFullVersion.sql" />
+    <None Include="sql\GetNameFromTemplate.sql" />
+    <None Include="sql\GetObjectCount.sql" />
+    <None Include="sql\GetPassportList.sql" />
+    <None Include="sql\GetPassportNonQualifyComp.sql" />
+    <None Include="sql\GetPassportsFromOldDB.sql" />
+    <None Include="sql\GetProductNameGroup.sql" />
+    <None Include="sql\GetProductNameWithoutLanguage.sql" />
+    <None Include="sql\GetProperties.sql" />
+    <None Include="sql\GetRepComputerWithHardwareParams.sql" />
+    <None Include="sql\GetRepCompWithSoftParams.sql" />
+    <None Include="sql\GetReportParams.sql" />
+    <None Include="sql\GetReports.sql" />
+    <None Include="sql\GetRepParamValue.sql" />
+    <None Include="sql\GetRootDN.sql" />
+    <None Include="sql\GetRulesFromOldDB.sql" />
+    <None Include="sql\GetSecuritySoftList.sql" />
+    <None Include="sql\GetSoftList.sql" />
+    <None Include="sql\GetSoftPassportCheck.sql" />
+    <None Include="sql\GetSoftTypeGUID.sql" />
+    <None Include="sql\GetTasksFromOldDB.sql" />
+    <None Include="sql\GetVersion.sql" />
+    <None Include="sql\GetWideSpreadHardware.sql" />
+    <None Include="sql\GetWideSpreadSoft.sql" />
+    <None Include="sql\InsertChipsetLibrary.sql" />
+    <None Include="sql\InsertFailedInspection.sql" />
+    <None Include="sql\InsertNewFilesFound.sql" />
+    <None Include="sql\InsertNewFoundProductFiles.sql" />
+    <None Include="sql\InsertNewHardware.sql" />
+    <None Include="sql\InsertNewInspectionData.sql" />
+    <None Include="sql\InsertNewReports.sql" />
+    <None Include="sql\InsertNewSoft.sql" />
+    <None Include="sql\InsertNewUSBDevice.sql" />
+    <None Include="sql\IsComputerExist.sql" />
+    <None Include="sql\IsObjectLocked.sql" />
+    <None Include="sql\MoveObject.sql" />
+    <None Include="sql\RetrievePassword.sql" />
+    <None Include="sql\SavePassword.sql" />
+    <None Include="sql\SearchChildren.sql" />
+    <None Include="sql\SearchObjects.sql" />
+    <None Include="sql\SetCategoryProperties.sql" />
+    <None Include="sql\SetComputerProperties.sql" />
+    <None Include="sql\SetHardwareLicenseRuleProperties.sql" />
+    <None Include="sql\SetHardwareProperties.sql" />
+    <None Include="sql\SetLibProductFileProperties.sql" />
+    <None Include="sql\SetLicenseRuleProperties.sql" />
+    <None Include="sql\SetObjectRootProperties.sql" />
+    <None Include="sql\SetPassportProperties.sql" />
+    <None Include="sql\SetProhibitionRuleProperties.sql" />
+    <None Include="sql\SetPublisherProperties.sql" />
+    <None Include="sql\SetRootDN.sql" />
+    <None Include="sql\SetRootName.sql" />
+    <None Include="sql\SetSoftProperties.sql" />
+    <None Include="sql\SetSoftTypeProperties.sql" />
+    <None Include="sql\SetSubdivisionProperties.sql" />
+    <None Include="sql\SetSynonymProperties.sql" />
+    <None Include="sql\SetTaskProperties.sql" />
+    <None Include="sql\SetUserPicture.sql" />
+    <None Include="sql\SetVersion.sql" />
+    <None Include="sql\SPGetLanguage.sql" />
+    <None Include="sql\UpdateDBOnNewSynonyms.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cmn\cmn.vcxproj">
+      <Project>{3d043f00-2905-452d-b609-11b94a868b49}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

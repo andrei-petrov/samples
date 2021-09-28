@@ -1,0 +1,378 @@
+//--------------------------------------------------------------------------------
+//  Copyright: (C) 2008-2009 by Andrey Petrov. All rights reserved
+//--------------------------------------------------------------------------------
+//  Unit:        
+//--------------------------------------------------------------------------
+//  Description: constant's definitions
+//--------------------------------------------------------------------------
+
+#pragma once
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// doc/view templates and thier resources (1..0x6FFF) => (1..999) 200 units
+//
+
+#define IDR_FINAL_EXECUTABLE_FIRST      950 // 49 doc/view templates
+
+
+#define IDR_SAMCFG						950
+#define IDR_OCRCFG_MANIFEST				1000
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// menus                                (1..0x6FFF) => (1000..28671) 270 units
+// we do not want to overlap with templates 
+//
+
+#define IDM_FINAL_EXECUTABLE_FIRST      28000   //  671 menu templates
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// dialogs                              (1..0x6FFF) => (1000..28671) 270 units
+//
+
+#define IDD_FINAL_EXECUTABLE_FIRST      28000  // 671 dialog templates
+
+#define IDD_OCRCFG_WELCOME_PAGE             28002
+#define IDD_OCRCFG_CREDENTIALS_PAGE         28003
+#define IDD_OCRCFG_CREATEFOLDER_PAGE        28004
+#define IDD_OCRCFG_CREATEDB_PAGE            28005
+#define IDD_OCRCFG_APPLYSCRIPTS_PAGE		28006
+#define IDD_OCRCFG_REGJOBS_PAGE				28007
+#define IDD_OCRCFG_REGSVC_PAGE				28008
+#define IDD_OCRCFG_DEPLOYRPT_PAGE           28009
+#define IDD_OCRCFG_LICENSE_PAGE             28010
+#define IDD_OCRCFG_SELECTSERVERS_PAGE       28011
+#define IDD_OCRCFG_SOFTLIBRARY_PAGE         28012
+#define IDD_OCRCFG_DCOM_PAGE		        28013
+#define IDD_OCRCFG_FINISH_PAGE              28014
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// dialog controls (0x000A..0xDFFF) => (1000..57343) 112 units   IDHELP = 9
+//
+
+#define IDC_FINAL_EXECUTABLE_FIRST      57000    // 343 controls
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// graphics (cursors, icons, bitmaps, toolbars)   (1..0x6FFF) => (1000..28671) 270 units
+// we do not want to overlap with templates
+//
+
+#define IDG_FINAL_EXECUTABLE_FIRST      28000     //  671 cursors, icons, bitmaps, toolbars
+
+
+
+
+#define IDB_OCRCFG_HEADER				    28000
+#define IDB_OCRCFG_WATERMARK				28001
+
+#define IDI_OCRCFG_ERROR                    28003
+#define IDI_OCRCFG_WARNING                  28004
+#define IDI_OCRCFG_INFORMATION              28005
+#define IDB_OCRCFG_TOOLBAR16x16				28006
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// error messages and codes   (1..0x7FFF) => (1000..16000) 150 units
+// we do not want to overlap with templates 
+//
+
+#define IDE_FINAL_EXECUTABLE_FIRST							15500  // 500 error, warning and question messages
+#define IDE_OPENING_CONFIGXML_ERROR							15501
+
+#define IDE_RPTMAN_LOAD_ERROR								15504
+#define IDE_REFRESH_ERROR									15505
+#define IDE_EMPTY_DATABASE_NAME								15506
+#define IDE_EMPTY_REPORTS_FOLDER_NAME						15507
+#define IDE_FILEOPERATION_ERROR								15508
+#define IDE_CREATE_XML_NODE_ERROR							15509
+#define IDE_LOAD_LIBRARY_FORMAT_ERROR						15510
+#define IDE_LOAD_LIBRARY_EMPTY_PUBLISHERS_LIST				15511
+#define IDE_DCOM_LOGIN_NOT_EXISTS							15512
+#define IDE_DCOM_LOGIN_EMPTY								15513
+#define IDE_OCRCFG_XML_CONFIG_PRODUCT_VERSION_UNKNOW_MSG1	15514
+#define IDE_OCRCFG_XML_CONFIG_PRODUCT_VERSION_UNKNOW_MSG2	15515
+#define IDE_OCRCFG_XML_CONFIG_PRODUCT_VERSION_ERROR			15516
+#define IDE_OCRCFG_LIBRARY_IMPORT_FILE						15517
+#define IDE_OCRCFG_SERVER_STOPPED_TIMEOUT_EXPIRED			15518
+#define IDE_OCRCFG_SERVER_DB_CREATOR_IS_UNKNOWN				15519
+#define IDE_OCRCFG_RPT_FILE_NOT_FOUND						15520
+#define IDE_OCRCFG_ERROR_CREATE_SEARCH_DIALOG				15521
+#define IDE_OCRCFG_ERROR_CREATE_RPT_SEARCH_DIALOG			15522
+#define IDE_OCRCFG_ERROR_STRING								15523
+#define IDE_OCRCFG_ERROR_RECIEVE_POINTER					15524
+#define IDE_OCRCFG_INCORRECT_INPUT							15525
+#define IDE_OCRCFG_FIELD_SERVER_IS_EMPTY					15526
+#define IDE_OCRCFG_POINTER_TO_INT_IS_NULL					15527
+#define IDE_OCRCFG_SECOND_INSTANCE							15528
+
+#define IDE_OCRCFG_SERVER_VERSION_TOO_OLD					15530
+#define IDE_OCRCFG_SERVER_COLLATION_NOT_CYRILLIC			15531
+#define IDE_OCRCFG_SERVER_STD_ENT_ONLY						15532
+#define IDE_OCRCFG_SERVER_INEGRATED_SEC_ONLY				15533
+
+#define IDE_OCRCFG_SERVER_FULLTEXTSEARCH_NOT_INSTALLED		15534
+#define IDE_OCRCFG_SERVER_DATABASEMAIL_NOT_INSTALLED		15535
+#define IDE_OCRCFG_SERVER_INT_SERVICES_NOT_INSTALLED		15536
+#define IDE_OCRCFG_SERVER_INT_SERVICES_NOT_RUNNING			15537
+
+#define IDE_OCRCFG_LOGON_AS_SERVICE_PERMISSION_GRANT_ERROR	15540
+#define IDE_OCRCFG_FOLDER_SHARE_FAILED						15541
+#define IDE_OCRCFG_SUBFOLDERS_CREATION_FAILED				15542
+
+#define IDE_OCRCFG_SERVER_JOBS_ABSENT						15550
+#define IDE_OCRCFG_SERVICE_NOT_STARTED						15551
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// general strings without help contexts (1..0x7FFF) => (16000..32767) 160 units
+// we do not want to overlap with templates and errors
+//
+
+#define IDS_FINAL_EXECUTABLE_FIRST          32500   // 267 strings
+
+// App title
+#define IDS_OCRCFG_APP_TITLE						32500
+
+// Page titles
+#define IDS_OCRCFG_CREDENTIALS_TITLE			    32501
+#define IDS_OCRCFG_CREDENTIALS_SUBTITLE		        32502
+
+#define IDS_OCRCFG_CREATEFOLDER_TITLE			    32503
+#define IDS_OCRCFG_CREATEFOLDER_SUBTITLE		    32504
+
+#define IDS_OCRCFG_CREATEDB_TITLE			        32505
+#define IDS_OCRCFG_CREATEDB_SUBTITLE		        32506
+
+#define IDS_OCRCFG_DELETEDB_TITLE			        32507
+#define IDS_OCRCFG_DELETEDB_SUBTITLE		        32508
+
+#define IDS_OCRCFG_APPLYSCRIPTS_TITLE				32509
+#define IDS_OCRCFG_APPLYSCRIPTS_SUBTITLE			32510
+
+#define IDS_OCRCFG_REGJOBS_TITLE			        32511
+#define IDS_OCRCFG_REGJOBS_SUBTITLE					32512
+
+#define IDS_OCRCFG_UNREGJOBS_TITLE			        32513
+#define IDS_OCRCFG_UNREGJOBS_SUBTITLE				32514
+
+#define IDS_OCRCFG_REGSVC_TITLE						32515
+#define IDS_OCRCFG_REGSVC_SUBTITLE					32516
+
+#define IDS_OCRCFG_UNREGSVC_TITLE				    32517
+#define IDS_OCRCFG_UNREGSVC_SUBTITLE			    32518
+
+#define IDS_OCRCFG_DEPLOYRPT_TITLE		            32519
+#define IDS_OCRCFG_DEPLOYRPT_SUBTITLE		        32520
+
+#define IDS_OCRCFG_SOFTLIBRARY_TITLE	            32521
+#define IDS_OCRCFG_SOFTLIBRARY_SUBTITLE		        32522
+
+#define IDS_OCRCFG_SELECTSERVERS_TITLE		        32523
+#define IDS_OCRCFG_SELECTSERVERS_SUBTITLE	        32524
+
+#define IDS_OCRCFG_DCOM_TITLE				        32525
+#define IDS_OCRCFG_DCOM_SUBTITLE			        32526
+
+
+// General and Welcome Page
+#define IDS_OCRCFG_PROGRESS		                    32531
+#define IDS_OCRCFG_QUERY_CANCEL		                32532
+#define IDS_OCRCFG_PARSE_STRING_SIZE                32533
+
+#define IDS_OCRCFG_XMLCONFIG_DEFEXT			        32534
+#define IDS_OCRCFG_XMLCONFIG_FILTER			        32535
+#define IDS_OCRCFG_REPORTPACK_FILTER		        32536
+#define IDS_OCRCFG_XML_CONFIG_PRODUCT_VERSION_MSG1  32537
+#define IDS_OCRCFG_XML_CONFIG_PRODUCT_VERSION_MSG2  32538
+
+
+
+// Database
+#define IDS_OCRCFG_LOGON_AS_SERVICE_PERMISSION_GRANTED  32540
+#define IDS_OCRCFG_PROJECT_FOLDER_CHOOSEN				32541
+#define IDS_OCRCFG_SCANS_FOLDER_CHOOSEN					32542
+
+#define IDS_OCRCFG_DB_CREATE_PROCESS                32550
+#define IDS_OCRCFG_DB_REMOVE_PROCESS                32551
+#define IDS_OCRCFG_DB_RECREATE_QUESTION				32552
+
+#define IDS_OCRCFG_DB_ALREADY_INSTALLED				32553
+#define IDS_OCRCFG_DB_NOT_INSTALLED					32554
+#define IDS_OCRCFG_DB_UNDEFINED						32555
+#define IDS_OCRCFG_DB_CREATED						32556
+#define IDS_OCRCFG_DB_REMOVED						32557
+#define IDS_OCRCFG_DB_USE                           32558
+#define IDS_OCRCFG_DB_GRANTED                       32559
+#define IDS_OCRCFG_DB_SCRIPTS_APPLIED               32560
+#define IDS_OCRCFG_DB_GRANT_ERROR                   32561
+
+//#define IDS_OCRCFG_CUSTOMSCRIPT_EXECUTION			32540
+#define IDS_OCRCFG_DB_SKIP_STEP						32570
+#define IDS_OCRCFG_DB_EMPTY_FIELD					32571
+
+
+#define IDS_OCRCFG_SCRIPT_EXECUTION_PROCESS			32572
+
+// Jobs
+#define IDS_OCRCFG_JOBS_CREATE_PROCESS				32573
+#define IDS_OCRCFG_JOBS_REMOVE_PROCESS				32574
+#define IDS_OCRCFG_JOBS_RECREATE_QUESTION			32575
+#define IDS_OCRCFG_JOBS_CREATED						32576
+#define IDS_OCRCFG_JOBS_REMOVED						32577
+
+// Services
+#define IDS_OCRCFG_SVC_CREATE_PROCESS				32580
+#define IDS_OCRCFG_SVC_REMOVE_PROCESS				32581
+#define IDS_OCRCFG_SVC_RECREATE_QUESTION			32582
+#define IDS_OCRCFG_SVC_CREATED						32583
+#define IDS_OCRCFG_SVC_REMOVED						32584
+
+// Reports
+#define IDS_OCRCFG_RPT_SEARCH_PROCESS               32590
+#define IDS_OCRCFG_RPT_SEARCH_COMPLETED             32591
+#define IDS_OCRCFG_RPT_SEARCH_FAILED                32592
+#define IDS_OCRCFG_RPT_SEARCH_FAILED_WAIT           32593
+
+#define IDS_OCRCFG_RPT_DEPLOY_PROCESS               32600
+#define IDS_OCRCFG_RPT_WAIT                         32602
+#define IDS_OCRCFG_RPT_DEPLOY_QUESTION				32603
+
+#define IDS_OCRCFG_RPT_ALREADY_INSTALLED			32604
+#define IDS_OCRCFG_RPT_NOT_INSTALLED				32605
+#define IDS_OCRCFG_RPT_UNDEFINED					32606
+#define IDS_OCRCFG_RPT_RESULTS						32607
+#define IDS_OCRCFG_RPT_USE							32608
+
+// sotfware library
+#define IDS_OCRCFG_SOFTLIBRARY_EXPORT_PROCESS		32610
+#define IDS_OCRCFG_SOFTLIBRARY_IMPORT_PROCESS		32611
+#define IDS_OCRCFG_SOFTLIBRARY_EXPORT_RESULTS		32612
+#define IDS_OCRCFG_SOFTLIBRARY_IMPORT_RESULTS		32613
+
+#define IDS_OCRCFG_LIBRARY_IMPORT_FILE_SUCCESS		32614
+#define IDS_OCRCFG_LIBRARY_IMPORT_FILE_FAILED		32615
+
+#define IDS_OCRCFG_EDIT_IMPORT_PATH					32616
+
+
+// Select Servers
+#define IDS_OCRCFG_SELECTSERVERS_SEARCHING_REPORTSERVERS_DB	32620
+#define IDS_OCRCFG_SELECTSERVERS_SEARCHING_REPORTSERVERS	32621
+#define IDS_OCRCFG_SELECTSERVERS_SEARCHING_DB	            32622
+#define IDS_OCRCFG_SELECTSERVERS_SEARCHING_DB_WEBFOLDERS    32623
+#define IDS_OCRCFG_SELECTSERVERS_SEARCHING_WEBFOLDERS       32624
+#define IDS_OCRCFG_SELECTSERVERS_SEARCH_COMPLETED           32625
+
+#define IDS_OCRCFG_SELECTSERVERS_ENTER_DBNAME               32626
+#define IDS_OCRCFG_SELECTSERVERS_ENTER_DBNAME_WEBFOLDER     32627
+#define IDS_OCRCFG_SELECTSERVERS_ENTER_WEBFOLDER            32628
+#define IDS_OCRCFG_SELECTSERVERS_ENTER_REPORTSERVER_WEBFOLDER  32629
+#define IDS_OCRCFG_SELECTSERVERS_ENTER_REPORTSERVER         32630
+#define IDS_OCRCFG_SELECTSERVERS_ENTER_NAMES                32631
+#define IDS_OCRCFG_SELECTSERVERS_WEBFOLDER_ACCESS_DENIED    32632
+#define IDS_OCRCFG_SELECTSERVERS_GETRPTMAN_FAIL			    32633
+
+
+//#define IDS_OCRCFG_SELECTSERVERS_ENTER_DBNAME_WEBFOLDER     32583
+
+// DCOM
+#define IDS_OCRCFG_DCOM_COMMON_PROCESS						32700
+#define IDS_OCRCFG_DCOM_POLICY_PROCESS						32701
+#define IDS_OCRCFG_DCOM_FIREWALL_PROCESS					32702
+#define IDS_OCRCFG_DCOM_CONFIGURE_RESULTS					32703
+
+#define IDS_OCRCFG_DCOM_REMOTE_ADMIN_ERROR					32704
+#define IDS_OCRCFG_DCOM_OPEN_PORT_ERROR						32705
+#define IDS_OCRCFG_DCOM_FIREWALL_EXCEPTION_APP_ERROR		32706
+#define IDS_OCRCFG_DCOM_GLOBAL_POLICY_WARNING				32707
+
+// Unknown
+#define IDS_OCRCFG_SETCONFIGXML_TITLE						32708
+#define IDS_OCRCFG_SETCONFIGXML_SUBTITLE					32709
+
+
+// Finish page
+#define IDS_OCRCFG_FINISH_RESULTS		                    32710
+
+//#define IDS_OCRCFG_SERVER_STOPPED_TIMEOUT_EXPIRED			32592
+
+////////////////////////////////////////////////////////////////////////////////////
+// commands and their prompt strings (0x8000..0xDFFF) => (33000..57343) 240 units
+//
+
+#define ID_FINAL_EXECUTABLE_FIRST                   57000   // 343 commands
+
+// since IDB_OCRCFG_16x16 is a toolbar, its bitmaps has a command IDs
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// windows messages (0x8000 == WM_APP..0xBFFF) => (33000..49151) 160 units
+//
+
+#define WM_FINAL_EXECUTABLE_FIRST                   49000   // 151 window commands
+
+
+#define WM_OCRCFG_HOSTOSUPDATE_FINISH				49001
+
+#define WM_OCRCFG_QUERY_CREDENTIALS					49010
+#define WM_OCRCFG_QUERY_CREATEFOLDER				49011
+#define WM_OCRCFG_QUERY_CREATEDB					49012
+#define WM_OCRCFG_QUERY_APPLYSCRIPTS				49013
+#define WM_OCRCFG_QUERY_REGJOBS						49014
+#define WM_OCRCFG_QUERY_REGSVC						49015
+#define WM_OCRCFG_QUERY_DEPLOYRPT					49016
+#define WM_OCRCFG_QUERY_LICENSE						49017
+#define WM_OCRCFG_QUERY_SELECTSERVERS				49018
+#define WM_OCRCFG_QUERY_SOFTLIBRARY					49019
+//#define WM_OCRCFG_QUERY_DCOM						49020
+
+/*
+int siblings[] = { WM_OCRCFG_QUERY_DATABASE,
+					WM_OCRCFG_QUERY_REPORTS,
+					WM_OCRCFG_QUERY_SELECTSERVERS,
+					WM_OCRCFG_QUERY_SOFTLIBRARY,
+					WM_OCRCFG_QUERY_DCOMCONFIGURE
+*/
+
+#define WM_OCRCFG_SCRIPT_EXCECUTION_START			49020
+#define WM_OCRCFG_SCRIPT_EXCECUTION_STAGE			49021
+#define WM_OCRCFG_SCRIPT_EXCECUTION_FINISH			49022
+
+#define WM_OCRCFG_DEPLOYRPT_START					49023
+#define WM_OCRCFG_DEPLOYRPT_STAGE					49024
+#define WM_OCRCFG_DEPLOYRPT_FINISH					49025
+
+#define WM_OCRCFG_CUSTOMSCRIPT_EXCECUTION_START		49032
+
+#define WM_OCRCFG_SOFTLIBRARYPROC_START				49034
+#define WM_OCRCFG_SOFTLIBRARYPROC_STAGE				49035
+#define WM_OCRCFG_SOFTLIBRARYPROC_FINISH			49036
+
+#define WM_OCRCFG_DCOMCONFIGURE_START				49038
+#define WM_OCRCFG_DCOMCONFIGURE_STAGE				49039
+#define WM_OCRCFG_DCOMCONFIGURE_FINISH				49040
+
+#define WM_OCRCFG_SOFTLIBRARYPROC_FILE_IMPORT_START 49042
+
+//#define WM_OCRCFG_READ_NETWORK_SQL_SERVER_FINISH    49043
+//#define WM_OCRCFG_READ_NETWORK_REPORT_SERVER_FINISH 49044
+//#define WM_OCRCFG_READ_SQLSRV_DATABASE_FINISH		49045
+#define WM_OCRCFG_READ_WEB_FOLDER_FINISH			49046
+
+//Configurator Modification Flags
+#define IsCreateDB 									0x01
+#define IsModifiedDBName 							0x02
+#define IsModifiedSqlServerName 					0x04
+#define IsModifiedReportServerName					0x08
+#define IsModifiedReportsWebCatalog					0x10
+#define IsInstallReports							0x20

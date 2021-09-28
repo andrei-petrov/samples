@@ -1,0 +1,415 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+ 
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "db/include/Constants.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""db/include/Constants.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN    
+	"IDR_DB_CREATE_TABLES			        RCDATA ""db/sql/CreateTables.sql""\r\n"
+	"IDR_DB_INSERT_NEW_SOFT			        RCDATA ""db/sql/InsertNewSoft.sql""\r\n"
+    "IDR_DB_INSERT_NEW_USBDEVICE		    RCDATA ""db/sql/InsertNewUSBDevice.sql""\r\n"
+	"IDR_DB_INSERT_NEW_INSPECTIONDATA       RCDATA ""db/sql/InsertNewHardware.sql""\r\n"
+	"IDR_DB_INSERT_NEW_HARDWARE             RCDATA ""db/sql/InsertNewInspectionData.sql""\r\n"
+	"IDR_DB_INSERT_NEW_FOUNDPRODUCTFILES    RCDATA ""db/sql/InsertNewFoundProductFiles.sql""\r\n"
+	"IDR_DB_INSERT_NEW_FILESFOUND           RCDATA ""db/sql/InsertNewFilesFound.sql""\r\n"
+	//"IDR_DB_CREATE_COMPUTER_GROUP	        RCDATA ""db/sql/CreateComputerGroup.sql""\r\n"
+    //"IDR_DB_CREATE_COMPUTER			        RCDATA ""db/sql/CreateComputer.sql""\r\n"
+	"IDR_DB_SEARCH_OBJECTS			        RCDATA ""db/sql/SearchObjects.sql""\r\n"
+	"IDR_DB_GET_PROPERTIES		            RCDATA ""db/sql/GetProperties.sql""\r\n"
+	"IDR_DB_CREATE_DB    		            RCDATA ""db/sql/CreateDB.sql""\r\n"
+	"IDR_DB_DELETE_OBJECT    		        RCDATA ""db/sql/DeleteObject.sql""\r\n"
+	"IDR_DB_SEARCH_CILDREN                  RCDATA ""db/sql/SearchChildren.sql""\r\n"
+	"IDR_DB_ADD_INITIAL_DATA		        RCDATA ""db/sql/AddInitialData.sql""\r\n"
+	"IDR_DB_INSERT_FAILED_INSPECTION	    RCDATA ""db/sql/InsertFailedInspection.sql""\r\n"
+	"IDR_DB_MOVE_COMPUTER                   RCDATA ""db/sql/MoveComputer.sql""\r\n"
+    "IDR_DB_MOVE_OBJECT                     RCDATA ""db/sql/MoveObject.sql""\r\n"
+	"IDR_DB_ADD_INITIAL_OBJECTS             RCDATA ""db/sql/AddInitialObjects.sql""\r\n"
+    //"IDR_DB_ADD_SCHEMA_OBJECTS              RCDATA ""db/sql/AddSchemaObjects.sql""\r\n" 
+    "IDR_DB_GET_LANGUAGE                    RCDATA ""db/sql/GetLanguage.sql""\r\n"
+    "IDR_DB_GET_OBJECTCOUNT                 RCDATA ""db/sql/GetObjectCount.sql""\r\n"
+    "IDR_DB_SP_GET_LANGUAGE                 RCDATA ""db/sql/SPGetLanguage.sql""\r\n"
+    "IDR_DB_GET_VERSION                     RCDATA ""db/sql/GetVersion.sql""\r\n"
+    "IDR_DB_SET_VERSION                     RCDATA ""db/sql/SetVersion.sql""\r\n"
+    "IDR_DB_GET_ROOTDN                      RCDATA ""db/sql/GetRootDN.sql""\r\n"
+    "IDR_DB_SET_ROOTDN                      RCDATA ""db/sql/SetRootDN.sql""\r\n"
+    "IDR_DB_SET_ROOTNAME                    RCDATA ""db/sql/SetRootName.sql""\r\n"
+    "IDR_DB_CREATE_PUBLISHER                RCDATA ""db/sql/CreatePublisher.sql""\r\n"
+    "IDR_DB_GET_REPORT_PARAMS               RCDATA ""db/sql/GetReportParams.sql""\r\n"
+    "IDR_DB_CREATE_TASK                     RCDATA ""db/sql/CreateTask.sql""\r\n"
+    "IDR_DB_CREATE_LICENSE_IMAGE            RCDATA ""db/sql/CreateLicenseImage.sql""\r\n"
+    "IDR_DB_CREATE_SOFTTYPE                 RCDATA ""db/sql/CreateSoftType.sql""\r\n"
+    //"IDR_DB_GET_SUPERRIORS                  RCDATA ""db/sql/GetSuperriors.sql""\r\n"
+    //"IDR_DB_GET_INFERIORS                   RCDATA ""db/sql/GetInferriors.sql""\r\n"
+    //"IDR_DB_GET_ATTRIBUTES                  RCDATA ""db/sql/GetAttributes.sql""\r\n"
+    "IDR_DB_GET_FULL_VERSION                RCDATA ""db/sql/GetFullVersion.sql""\r\n"
+    "IDR_DB_CREATE_COMP_TASK_LINK           RCDATA ""db/sql/CreateComputerLink.sql""\r\n"
+
+    "IDR_DB_GET_SOFTFORCOMPUTER             RCDATA ""db/sql/GetComputerSoft.sql""\r\n"
+    "IDR_DB_GET_OSFORCOMPUTER               RCDATA ""db/sql/GetComputerOS.sql""\r\n"
+    "IDR_DB_GET_HARDFORCOMPUTER             RCDATA ""db/sql/GetComputerHard.sql""\r\n"
+    "IDR_DB_GET_INSPECTEDCOMPUTERS          RCDATA ""db/sql/GetInspectedComputers.sql""\r\n"
+    "IDR_DB_GET_OSLISTFORCOMPUTER           RCDATA ""db/sql/GetComputerOSList.sql""\r\n"
+
+    "IDR_DB_DELETE_OLD_ACTIONS              RCDATA ""db/sql/DeleteOldActions.sql""\r\n"
+    "IDR_DB_SET_USER_PICTURE                RCDATA ""db/sql/SetUserPicture.sql""\r\n" 
+    "IDR_DB_DEFAULT_PICTURE                 RCDATA ""db/resource/DefaultPicture.jpg""\r\n" 
+    "IDR_DB_DEMO_PICTURE                    RCDATA ""db/resource/DemoPicture.jpg""\r\n"
+    "IDR_DB_IS_COMPUTER_EXIST               RCDATA ""db/sql/IsComputerExist.sql""\r\n"
+    "IDR_DB_IS_OBJECT_LOCKED                RCDATA ""db/sql/IsObjectLocked.sql""\r\n"
+    "IDR_DB_GET_REP_PARAM_VALUE             RCDATA ""db/sql/GetRepParamValue.sql""\r\n" 
+    "IDR_DB_CREATE_PROHIBITION_RULE         RCDATA ""db/sql/CreateProhibitionRule.sql""\r\n"
+    "IDR_DB_CREATE_PASSPORT                 RCDATA ""db/sql/CreatePassport.sql""\r\n"
+    "IDR_DB_CREATE_PASSPORT_LINK            RCDATA ""db/sql/CreatePassportLink.sql""\r\n"
+    "IDR_DB_CREATE_LICENSERULE_LINK         RCDATA ""db/sql/CreateLicenseRuleLink.sql""\r\n"
+    "IDR_DB_CREATE_HARDWARELICENSERULE_LINK RCDATA ""db/sql/CreateHardwareLicenseRuleLink.sql""\r\n"
+    "IDR_DB_GET_CORRECTEDUTCTIMETO          RCDATA ""db/sql/GetCorrectedUTCTimeTo.sql""\r\n"
+    "IDR_DB_GET_HARDWARECHANGES             RCDATA ""db/sql/GetHardwareChanges.sql""\r\n"
+    "IDR_DB_GET_ALLHARDCHANGES              RCDATA ""db/sql/GetAllHardChanges.sql""\r\n"
+    "IDR_DB_GET_ALLSOFTCHANGES              RCDATA ""db/sql/GetAllSoftChanges.sql""\r\n"
+    "IDR_DB_GET_PRODUCTNAMEWITHOUTLANGUAGE  RCDATA ""db/sql/GetProductNameWithoutLanguage.sql""\r\n"
+    "IDR_DB_GET_PRODUCTNAMEGROUP            RCDATA ""db/sql/GetProductNameGroup.sql""\r\n"
+    "IDR_DB_GET_PRODUCTNAMEFROMTEMPLATE     RCDATA ""db/sql/GetNameFromTemplate.sql""\r\n"
+    "IDR_DB_INSERT_NEW_REPORTS              RCDATA ""db/sql/InsertNewReports.sql""\r\n"
+    "IDR_DB_GET_REPCOMPWITHSOFTPARAMS       RCDATA ""db/sql/GetRepCompWithSoftParams.sql""\r\n"
+    "IDR_DB_GET_REPCOMPWITHHARDWAREPARAMS   RCDATA ""db/sql/GetRepComputerWithHardwareParams.sql""\r\n"
+    "IDR_DB_CREATELICENSERULE               RCDATA ""db/sql/CreateLicenseRule.sql""\r\n"
+    "IDR_DB_CREATEHARDWARELICENSERULE       RCDATA ""db/sql/CreateHardwareLicenseRule.sql""\r\n"
+    "IDR_DB_SAVEPASSWORD                    RCDATA ""db/sql/SavePassword.sql""\r\n"
+    "IDR_DB_RETRIEVEPASSWORD                RCDATA ""db/sql/RetrievePassword.sql""\r\n"
+    "IDR_DB_GET_DEVICELIST                  RCDATA ""db/sql/GetDeviceList.sql""\r\n"
+    "IDR_DB_GET_REPORTS                     RCDATA ""db/sql/GetReports.sql""\r\n"
+    "IDR_DB_GET_PASSPORTNONQUALIFYCOMP      RCDATA ""db/sql/GetPassportNonQualifyComp.sql""\r\n"
+    "IDR_DB_GET_PASSPORTLIST                RCDATA ""db/sql/GetPassportList.sql""\r\n"
+    "IDR_DB_GET_WIDESPREADHARDWARE          RCDATA ""db/sql/GetWideSpreadHardware.sql""\r\n"
+    "IDR_DB_GET_WIDESPREADSOFT              RCDATA ""db/sql/GetWideSpreadSoft.sql""\r\n"
+    "IDR_DB_GET_CHARGUID                    RCDATA ""db/sql/GetCharGuid.sql""\r\n"
+    "IDR_DB_GET_SOFTPASSPORTCHECK           RCDATA ""db/sql/GetSoftPassportCheck.sql""\r\n"
+    "IDR_DB_GET_HARDWAREPASSPORTCHECK       RCDATA ""db/sql/GetHardwarePassportCheck.sql""\r\n"
+    "IDR_DB_GET_EXTENDDEVICEDESC            RCDATA ""db/sql/GetExtendDeviceDesc.sql""\r\n"
+    "IDR_DB_GET_FREQUENCYFROMPROCESSORNAME  RCDATA ""db/sql/GetFrequencyFromProcessorName.sql""\r\n"
+    "IDR_DB_CREATE_CATEGORY                 RCDATA ""db/sql/CreateCategory.sql""\r\n"
+    "IDR_DB_CREATE_SYNONYM                  RCDATA ""db/sql/CreateSynonym.sql""\r\n"
+    "IDR_DB_CREATE_SUBDIVISION              RCDATA ""db/sql/CreateSubdivision.sql""\r\n"
+    "IDR_DB_UPDATE_DBONNEWSYNONYMS          RCDATA ""db/sql/UpdateDBOnNewSynonyms.sql""\r\n"
+    "IDR_DB_GET_SOFTTYPEGUID                RCDATA ""db/sql/GetSoftTypeGuid.sql""\r\n"
+    "IDR_DB_GET_SOFTLIST                    RCDATA ""db/sql/GetSoftList.sql""\r\n"
+
+    "IDR_DB_CREATE_OBJECTRELATIONVIEWS               ""db/sql/CreateObjectRelationViews.sql""\r\n"
+    "IDR_DB_CREATE_VIEWCOMPUTER                      ""db/sql/CreateViewComputer.sql""\r\n"
+    "IDR_DB_CREATE_VIEWLASTCOMPUTERINSP              ""db/sql/CreateViewLastComputerInsp.sql""\r\n" 
+    "IDR_DB_CREATE_VIEWLASTSUCCESSCOMPUTERINSP       ""db/sql/CreateViewLastSuccessComputerInsp.sql""\r\n"
+    "IDR_DB_CREATE_VIEWCOMPUTERPASSPORTS             ""db/sql/CreateViewComputerPassports.sql""\r\n"
+    "IDR_DB_CREATE_VIEWHARDINSTALLATION              ""db/sql/CreateViewHardInstallation.sql""\r\n"
+    "IDR_DB_CREATE_VIEWHARDWARELICENSERULE           ""db/sql/CreateViewHardwareLicenseRule.sql""\r\n"
+    "IDR_DB_CREATE_VIEWINSTALLATION                  ""db/sql/CreateViewInstallation.sql""\r\n"
+    "IDR_DB_CREATE_VIEWFILEINSTALLATION              ""db/sql/CreateViewFileInstallation.sql""\r\n"
+    "IDR_DB_CREATE_VIEWLICENSERULE                   ""db/sql/CreateViewLicenseRule.sql""\r\n"
+    "IDR_DB_CREATE_VIEWPASSPORTHARDWARELICENSERULES  ""db/sql/CreateViewPassportHardwareLicenseRules.sql""\r\n"
+    "IDR_DB_CREATE_VIEWPASSPORTLICENSERULES          ""db/sql/CreateViewPassportLicenseRules.sql""\r\n"
+    "IDR_DB_CREATE_VIEWPROHIBITIONRULE               ""db/sql/CreateViewProhibitionRule.sql""\r\n"
+    "IDR_DB_CREATE_VIEWS                             ""db/sql/CreateViews.sql""\r\n"
+    "IDR_DB_CREATE_VIEWSOFT                          ""db/sql/CreateViewSoft.sql.sql""\r\n"
+    "IDR_DB_CREATE_VIEWSOFTTYPE                      ""db/sql/CreateViewSoftType.sql""\r\n"
+    "IDR_DB_CREATE_VIEWSYNONYM                       ""db/sql/CreateViewSynonym.sql""\r\n"
+    "IDR_DB_CREATE_VIEWTASKCOMPUTERS                 ""db/sql/CreateViewTaskComputers.sql""\r\n"
+    "IDR_DB_CREATE_LIBPRODUCTFILE                    ""db/sql/CreateLibProductFile.sql""\r\n"              
+    "IDR_DB_CREATE_VIEWLIBPRODUCTFILE                ""db/sql/CreateViewLibProductFile.sql""\r\n"             
+    "IDR_DB_CREATE_VIEWFOUNDPRODUCTFILE              ""db/sql/CreateViewFoundProductFile.sql""\r\n"
+    "IDR_DB_GET_LIBRARYXML                           ""db/sql/GetLibraryXML.sql""\r\n"
+    "IDR_DB_ADDLIBRARY                               ""db/sql/AddLibrary.sql""\r\n"
+    "IDR_DB_GET_DEFINITEINSPECTIONFILECHECK          ""db/sql/GetDefiniteInspectionFileCheck.sql""\r\n"
+    "IDR_DB_GET_FILECHECK                            ""db/sql/GetFileCheck.sql""\r\n"
+    "IDR_DB_GET_MAJORVERSIONFROMFULLVERSION          ""db/sql/GetMajorVersionFromFullVersion.sql""\r\n"
+    "IDR_DB_SET_CATEGORYPROPERTIES                   ""db/sql/SetCategoryProperties.sql""\r\n"
+    "IDR_DB_SET_COMPUTERPROPERTIES                   ""db/sql/SetComputerProperties.sql""\r\n"
+    "IDR_DB_SET_HARDWARELICENSERULEPROPERTIES        ""db/sql/SetHardwareLicenseRuleProperties.sql""\r\n"
+    "IDR_DB_SET_LICENSERULEPROPERTIES                ""db/sql/SetHardwareProperties.sql""\r\n"
+    "IDR_DB_SET_HARDWAREPROPERTIES                   ""db/sql/SetLicenseRuleProperties.sql""\r\n"
+    "IDR_DB_SET_OBJECTROOTPROPERTIES                 ""db/sql/SetObjectRootProperties.sql""\r\n"
+    "IDR_DB_SET_PASSPORTPROPERTIES                   ""db/sql/SetPassportProperties.sql""\r\n"
+    "IDR_DB_SET_PROHIBITIONRULEPROPERTIES            ""db/sql/SetProhibitionRuleProperties.sql""\r\n"
+    "IDR_DB_SET_PUBLISHERPROPERTIES                  ""db/sql/SetPublisherProperties.sql""\r\n"
+    "IDR_DB_SET_SOFTPROPERTIES                       ""db/sql/SetSoftProperties.sql""\r\n"
+    "IDR_DB_SET_SOFTTYPEPROPERTIES                   ""db/sql/SetSoftTypeProperties.sql""\r\n"
+    "IDR_DB_SET_SUBDIVISIONPROPERTIES                ""db/sql/SetSubdivisionProperties.sql""\r\n"
+    "IDR_DB_SET_SYNONYMPROPERTIES                    ""db/sql/SetSynonymProperties.sql""\r\n"
+    "IDR_DB_SET_TASKPROPERTIES                       ""db/sql/SetTaskProperties.sql""\r\n" 
+    "IDR_DB_SET_LIBPRODUCTFILEPROPERTIES             ""db/sql/SetLibProductFileProperties.sql""\r\n" 
+    "IDR_DB_CREATE_VIEWMAXCOMPUTERACTION             ""db/sql/CreateViewMaxComputerAction.sql""\r\n" 
+    "IDR_DB_CREATE_VIEWMAXFILESSEARCHCOMPUTERACTION  ""db/sql/CreateViewMaxFilesSearchComputerAction.sql""\r\n" 
+    "IDR_DB_CREATE_VIEWMAXPROGRAMSSEARCHCOMPUTERACTION ""db/sql/CreateViewMaxProgramsSearchComputerAction.sql""\r\n" 
+    "IDR_DB_GET_COMPWITHSECURITY                     ""db/sql/GetCompWithSecurity.sql""\r\n"
+    "IDR_DB_GET_COMPWITHDEFINITESECURITY             ""db/sql/GetCompWithDefiniteSecurity.sql""\r\n"
+    "IDR_DB_GET_SECURITYSOFTLIST                     ""db/sql/GetSecuritySoftList.sql""\r\n"
+    "IDR_DB_GET_DATAFROMOLDDB                        ""db/sql/GetDataFromOldDB.sql""\r\n"
+    "IDR_DB_GET_LIBRARYFROMOLDDB                     ""db/sql/GetLibraryFromOldDB.sql""\r\n"
+    "IDR_DB_GET_COMPUTERSFROMOLDDB                   ""db/sql/GetComputersFromOldDB.sql""\r\n"
+    "IDR_DB_GET_TASKSFROMOLDDB                       ""db/sql/GetTasksFromOldDB.sql""\r\n"
+    "IDR_DB_GET_RULESFROMOLDDB                       ""db/sql/GetRulesFromOldDB.sql""\r\n"
+    "IDR_DB_GET_PASPORTSFROMOLDDB                    ""db/sql/GetPassportsFromOldDB.sql""\r\n"
+    "IDR_DB_GET_INSPECTIONSFROMOLDDB                 ""db/sql/GetInspectionsFromOldDB.sql""\r\n"
+    "IDR_DB_CLEARDB                                  ""db/sql/ClearDB.sql""\r\n"
+    "IDR_DB_INSERT_CHIPSETLIBRARY                    ""db/sql/InsertChipsetLibrary.sql""\r\n"         
+    "IDR_DB_ADD_CHIPSETLIBRARY                       ""db/sql/AddChipsetLibrary.sql""\r\n"
+
+
+    "\r\n" 
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+STRINGTABLE
+BEGIN
+	IDE_DB_CANNOT_CONNECT			 "Невозможно подсоединиться к SQLServer '%1', базе '%2'. "
+	IDE_DB_STORED_PROCEDURE_FAILED	 "Хранимая процедура '%s' завершилась с кодом ошибки %i. "
+	IDE_DB_XML_IMPORT_FAILED		 "Импорт XML файла завершился с ошибкой. "
+	IDE_DB_FAILINSPECTINFO_FAILED    "Не удалось записать в базу текст ошибки инспектирования. "
+	IDE_DB_COMMAND_FAILED			 "Команда '%s' длиной '%i' завершилась с ошибкой. "
+    IDE_DB_SETDBVERSION_FAILED       "Ошибка при установке версии базы. " 
+    IDE_DB_SETROOTNAME_FAILED        "Ошибка при установке имени сервера. "
+    IDE_DB_GETOBJECTTYPE_FAILED      "Ошибка определения типа объекта. " 
+    IDE_DB_GETCOMPUTERS4TASK_FAILED  "Ошибка получения списка компьютеров, входящих в задание. " 
+    IDE_DB_GETPASSPORTS4COMPUTER_FAILED 			"Ошибка получения списка паспортов для компьютера. " 
+    IDE_DB_GETLICENSERULEFORPASSPORT_FAILED   		"Ошибка получения правил белого списка софта для паспорта. "
+    IDE_DB_GETHARDWARELICENSERULEFORPASSPORT_FAILED "Ошибка получения правил белого списка оборудования для паспорта. "
+    IDE_DB_INSERTPICTURE_FAILED      "Ошибка загрузки изображения в базу. "   
+    IDE_DB_GETCOMPUTERSCOUNT_FAILED  "Ошибка определения количества компьютеров. " 
+    IDE_DB_GETCREATIONDATE_FAILED    "Ошибка определения даты установки сервера. " 
+	IDE_DB_ADDLOGIN_FAILED			 "Ошибка при предоставлении прав на работу с базой данных. "
+    IDE_DB_GETREPPARAMVALUE_FAILED   "Ошибка получения значений параметров отчета. " 
+    IDE_DB_GETCONNECTION_TIMEOUT     "Истекло время ожидания свободного соединения к базе данных. "
+
+    IDE_DB_GETCOMPUTERSOFT_FAILED    "Ошибка получения информации о ПО для компьютера из базы данных. "   
+    IDE_DB_GETCOMPUTEROS_FAILED      "Ошибка получения информации об операционной системе для компьютера из базы данных. "   
+    IDE_DB_GETCOMPUTERHARD_FAILED    "Ошибка получения информации об оборудовании для компьютера из базы данных. "   
+    IDE_DB_GETINSPECTEDCOMPS_FAILED  "Ошибка получения списка проинспектированных компьютеров из базы данных. "   
+
+    IDE_DB_EXPORTDATABASE_FAILED     	  "Ошибка экспорта базы данных в файл. "   
+    IDE_DB_CREATELICENSEIMAGE_FAILED 	  "Ошибка создания электронных копий лицензий в базе данных. "
+    IDE_DB_APPLYSYNONYMS_FAILED	     	  "Ошибка применения синонимов к базе данных. "
+	IDE_DB_GRANT_GUEST_PERMISSIONS_FAILED "Ошибка при предоставлении пользователю guest прав на просмотр отчетов. "
+END
+
+STRINGTABLE
+BEGIN
+    IDE_DB_SQLBROWSER_FAILED 	  "Не удалось опросить службу SqlBrowser"
+    IDE_DB_GETIPBYHOSTNAME_FAILED "Не удалось получить IP-адресс хоста"
+    IDE_DB_GETHOSTNAME_FAILED 	  "Не удалось получить имя компьютера"
+    IDE_DB_GETLOCALSQL_FAILED 	  "Локальные SQL-сервера не найдены"
+    IDE_DB_SERVERENUM_FAILED 	  "Не удалось получить список имен SQL хостов"
+	IDE_DB_WSAINIT_FAILED   	  "Библиотека WSA не была проинициализирована"
+	IDE_DB_SOCK_CONNECT_ERROR     "Ошибка подключения"
+	IDE_DB_SOCK_DISCONNECT_ERROR  "Ошибка отключения"
+	IDE_DB_SOCK_CREATE_ERROR      "Ошибка создания сокета"
+	IDE_DB_SOCK_CLOSE_ERROR       "Ошибка закрытия сокета"
+
+	IDE_DB_ADD_USER_FAILED			"Не удалось добавить администратора РИО с именем '%s' и логином '%s'"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+IDR_DB_CREATE_TABLES			       RCDATA "db/sql/CreateTables.sql"
+IDR_DB_INSERT_NEW_SOFT			       RCDATA "db/sql/InsertNewSoft.sql"
+IDR_DB_INSERT_NEW_USBDEVICE		       RCDATA "db/sql/InsertNewUSBDevice.sql"
+IDR_DB_INSERT_NEW_INSPECTIONDATA       RCDATA "db/sql/InsertNewHardware.sql"
+IDR_DB_INSERT_NEW_HARDWARE             RCDATA "db/sql/InsertNewInspectionData.sql"
+IDR_DB_INSERT_NEW_FOUNDPRODUCTFILES    RCDATA "db/sql/InsertNewFoundProductFiles.sql"
+IDR_DB_INSERT_NEW_FILESFOUND           RCDATA "db/sql/InsertNewFilesFound.sql"
+//IDR_DB_CREATE_COMPUTER_GROUP	       RCDATA "db/sql/CreateComputerGroup.sql"
+//IDR_DB_CREATE_COMPUTER			       RCDATA "db/sql/CreateComputer.sql"
+IDR_DB_SEARCH_OBJECTS			       RCDATA "db/sql/SearchObjects.sql"
+IDR_DB_GET_PROPERTIES		           RCDATA "db/sql/GetProperties.sql"
+IDR_DB_CREATE_DB    		           RCDATA "db/sql/CreateDB.sql"
+IDR_DB_DELETE_OBJECT    		       RCDATA "db/sql/DeleteObject.sql"
+IDR_DB_SEARCH_CHILDREN                 RCDATA "db/sql/SearchChildren.sql"
+IDR_DB_ADD_INITIAL_DATA		           RCDATA "db/sql/AddInitialData.sql"
+IDR_DB_INSERT_FAILED_INSPECTION		   RCDATA "db/sql/InsertFailedInspection.sql"
+//IDR_DB_MOVE_COMPUTER                   RCDATA "db/sql/MoveComputer.sql" 
+IDR_DB_ADD_INITIAL_OBJECTS             RCDATA "db/sql/AddInitialObjects.sql"
+//IDR_DB_ADD_SCHEMA_OBJECTS              RCDATA "db/sql/AddSchemaObjects.sql"
+IDR_DB_GET_COMPUTER_CREDENTIALS	       RCDATA "db/sql/GetComputerCredentials.sql"
+IDR_DB_GET_LANGUAGE                    RCDATA "db/sql/GetLanguage.sql"
+IDR_DB_GET_OBJECTCOUNT                 RCDATA "db/sql/GetObjectCount.sql"
+IDR_DB_GET_VERSION                     RCDATA "db/sql/GetVersion.sql"
+IDR_DB_SET_VERSION                     RCDATA "db/sql/SetVersion.sql"
+IDR_DB_GET_ROOTDN                      RCDATA "db/sql/GetRootDN.sql"
+IDR_DB_SET_ROOTDN                      RCDATA "db/sql/SetRootDN.sql"
+IDR_DB_SET_ROOTNAME                    RCDATA "db/sql/SetRootName.sql"
+IDR_DB_CREATE_PUBLISHER                RCDATA "db/sql/CreatePublisher.sql"
+IDR_DB_GET_REPORT_PARAMS               RCDATA "db/sql/GetReportParams.sql"
+IDR_DB_CREATE_TASK                     RCDATA "db/sql/CreateTask.sql"
+IDR_DB_CREATE_LICENSE_IMAGE            RCDATA "db/sql/CreateLicenseImage.sql"
+IDR_DB_CREATE_SOFTTYPE                 RCDATA "db/sql/CreateSoftType.sql"
+IDR_DB_MOVE_OBJECT                     RCDATA "db/sql/MoveObject.sql"
+//IDR_DB_GET_SUPERIORS                   RCDATA "db/sql/GetSuperriors.sql"
+//IDR_DB_GET_INFERIORS                   RCDATA "db/sql/GetInferriors.sql"
+//IDR_DB_GET_ATTRIBUTES                  RCDATA "db/sql/GetAttributes.sql"
+IDR_DB_GET_FULL_VERSION                RCDATA "db/sql/GetFullVersion.sql"
+IDR_DB_CREATE_COMP_TASK_LINK           RCDATA "db/sql/CreateComputerLink.sql"
+
+IDR_DB_GET_SOFTFORCOMPUTER             RCDATA "db/sql/GetComputerSoft.sql"
+IDR_DB_GET_OSFORCOMPUTER               RCDATA "db/sql/GetComputerOS.sql"
+IDR_DB_GET_HARDFORCOMPUTER             RCDATA "db/sql/GetComputerHard.sql"
+IDR_DB_GET_INSPECTEDCOMPUTERS          RCDATA "db/sql/GetInspectedComputers.sql"
+IDR_DB_GET_OSLISTFORCOMPUTER           RCDATA "db/sql/GetComputerOSList.sql"
+
+IDR_DB_DELETE_OLD_ACTIONS              RCDATA "db/sql/DeleteOldActions.sql"
+IDR_DB_SET_USER_PICTURE                RCDATA "db/sql/SetUserPicture.sql"
+IDR_DB_DEFAULT_PICTURE                 RCDATA "db/resource/DefaultPicture.jpg" 
+IDR_DB_DEMO_PICTURE                    RCDATA "db/resource/DemoPicture.jpg"
+IDR_DB_SP_GET_LANGUAGE                 RCDATA "db/sql/SPGetLanguage.sql"
+IDR_DB_IS_COMPUTER_EXIST               RCDATA "db/sql/IsComputerExist.sql"
+IDR_DB_IS_OBJECT_LOCKED                RCDATA "db/sql/IsObjectLocked.sql"
+IDR_DB_GET_REP_PARAM_VALUE             RCDATA "db/sql/GetRepParamValue.sql"
+IDR_DB_CREATE_PROHIBITION_RULE         RCDATA "db/sql/CreateProhibitionRule.sql"
+IDR_DB_CREATE_PASSPORT                 RCDATA "db/sql/CreatePassport.sql"
+IDR_DB_CREATE_PASSPORT_LINK            RCDATA "db/sql/CreatePassportLink.sql"
+IDR_DB_CREATE_LICENSERULE_LINK         RCDATA "db/sql/CreateLicenseRuleLink.sql"
+IDR_DB_CREATE_HARDWARELICENSERULE_LINK RCDATA "db/sql/CreateHardwareLicenseRuleLink.sql"
+IDR_DB_GET_CORRECTEDUTCTIMETO          RCDATA "db/sql/GetCorrectedUTCTimeTo.sql"
+IDR_DB_GET_HARDWARECHANGES             RCDATA "db/sql/GetHardwareChanges.sql"
+IDR_DB_GET_ALLHARDCHANGES              RCDATA "db/sql/GetAllHardChanges.sql"
+IDR_DB_GET_ALLSOFTCHANGES              RCDATA "db/sql/GetAllSoftChanges.sql"
+IDR_DB_GET_PRODUCTNAMEWITHOUTLANGUAGE  RCDATA "db/sql/GetProductNameWithoutLanguage.sql"
+IDR_DB_GET_PRODUCTNAMEGROUP            RCDATA "db/sql/GetProductNameGroup.sql"
+IDR_DB_GET_PRODUCTNAMEFROMTEMPLATE     RCDATA "db/sql/GetNameFromTemplate.sql"
+IDR_DB_INSERT_NEW_REPORTS              RCDATA "db/sql/InsertNewReports.sql"
+IDR_DB_GET_REPCOMPWITHSOFTPARAMS       RCDATA "db/sql/GetRepCompWithSoftParams.sql"
+IDR_DB_GET_REPCOMPWITHHARDWAREPARAMS   RCDATA "db/sql/GetRepComputerWithHardwareParams.sql"
+IDR_DB_CREATELICENSERULE               RCDATA "db/sql/CreateLicenseRule.sql"
+IDR_DB_SAVEPASSWORD                    RCDATA "db/sql/SavePassword.sql"
+IDR_DB_RETRIEVEPASSWORD                RCDATA "db/sql/RetrievePassword.sql"
+IDR_DB_GET_DEVICELIST                  RCDATA "db/sql/GetDeviceList.sql"
+IDR_DB_GET_REPORTS                     RCDATA "db/sql/GetReports.sql"
+IDR_DB_GET_PASSPORTNONQUALIFYCOMP      RCDATA "db/sql/GetPassportNonQualifyComp.sql"
+IDR_DB_GET_PASSPORTLIST                RCDATA "db/sql/GetPassportList.sql"
+IDR_DB_GET_WIDESPREADHARDWARE          RCDATA "db/sql/GetWideSpreadHardware.sql"
+IDR_DB_GET_WIDESPREADSOFT              RCDATA "db/sql/GetWideSpreadSoft.sql"
+IDR_DB_GET_CHARGUID                    RCDATA "db/sql/GetCharGuid.sql"
+IDR_DB_CREATEHARDWARELICENSERULE       RCDATA "db/sql/CreateHardwareLicenseRule.sql"
+IDR_DB_GET_SOFTPASSPORTCHECK           RCDATA "db/sql/GetSoftPassportCheck.sql"
+IDR_DB_GET_HARDWAREPASSPORTCHECK       RCDATA "db/sql/GetHardwarePassportCheck.sql"
+IDR_DB_GET_EXTENDDEVICEDESC            RCDATA "db/sql/GetExtendDeviceDesc.sql"
+IDR_DB_GET_FREQUENCYFROMPROCESSORNAME  RCDATA "db/sql/GetFrequencyFromProcessorName.sql"
+IDR_DB_CREATE_CATEGORY                 RCDATA "db/sql/CreateCategory.sql"
+IDR_DB_CREATE_SYNONYM                  RCDATA "db/sql/CreateSynonym.sql"
+IDR_DB_CREATE_SUBDIVISION              RCDATA "db/sql/CreateSubdivision.sql"
+IDR_DB_UPDATE_DBONNEWSYNONYMS          RCDATA "db/sql/UpdateDBOnNewSynonyms.sql"
+IDR_DB_GET_SOFTTYPEGUID                RCDATA "db/sql/GetSoftTypeGuid.sql"
+IDR_DB_GET_SOFTLIST                    RCDATA "db/sql/GetSoftList.sql"
+
+IDR_DB_CREATE_OBJECTRELATIONVIEWS               RCDATA "db/sql/CreateObjectRelationViews.sql"
+IDR_DB_CREATE_VIEWCOMPUTER                      RCDATA "db/sql/CreateViewComputer.sql"
+IDR_DB_CREATE_VIEWLASTCOMPUTERINSP              RCDATA "db/sql/CreateViewLastComputerInsp.sql"
+IDR_DB_CREATE_VIEWLASTSUCCESSCOMPUTERINSP       RCDATA "db/sql/CreateViewLastSuccessComputerInsp.sql"
+IDR_DB_CREATE_VIEWCOMPUTERPASSPORTS             RCDATA "db/sql/CreateViewComputerPassports.sql"
+IDR_DB_CREATE_VIEWHARDINSTALLATION              RCDATA "db/sql/CreateViewHardInstallation.sql"
+IDR_DB_CREATE_VIEWHARDWARELICENSERULE           RCDATA "db/sql/CreateViewHardwareLicenseRule.sql"
+IDR_DB_CREATE_VIEWINSTALLATION                  RCDATA "db/sql/CreateViewInstallation.sql"
+IDR_DB_CREATE_VIEWFILEINSTALLATION              RCDATA "db/sql/CreateViewFileInstallation.sql"
+IDR_DB_CREATE_VIEWLICENSERULE                   RCDATA "db/sql/CreateViewLicenseRule.sql"
+IDR_DB_CREATE_VIEWPASSPORTHARDWARELICENSERULES  RCDATA "db/sql/CreateViewPassportHardwareLicenseRules.sql"
+IDR_DB_CREATE_VIEWPASSPORTLICENSERULES          RCDATA "db/sql/CreateViewPassportLicenseRules.sql"
+IDR_DB_CREATE_VIEWPROHIBITIONRULE               RCDATA "db/sql/CreateViewProhibitionRule.sql"
+IDR_DB_CREATE_VIEWS                             RCDATA "db/sql/CreateViews.sql"
+IDR_DB_CREATE_VIEWSOFT                          RCDATA "db/sql/CreateViewSoft.sql"
+IDR_DB_CREATE_VIEWSOFTTYPE                      RCDATA "db/sql/CreateViewSoftType.sql"
+IDR_DB_CREATE_VIEWSYNONYM                       RCDATA "db/sql/CreateViewSynonym.sql"
+IDR_DB_CREATE_VIEWTASKCOMPUTERS                 RCDATA "db/sql/CreateViewTaskComputers.sql"
+IDR_DB_CREATE_LIBPRODUCTFILE                    RCDATA "db/sql/CreateLibProductFile.sql"            
+IDR_DB_CREATE_VIEWLIBPRODUCTFILE                RCDATA "db/sql/CreateViewLibProductFile.sql"          
+IDR_DB_CREATE_VIEWFOUNDPRODUCTFILE              RCDATA "db/sql/CreateViewFoundProductFile.sql"
+IDR_DB_GET_LIBRARYXML                           RCDATA "db/sql/GetLibraryXML.sql"
+IDR_DB_ADDLIBRARY                               RCDATA "db/sql/AddLibrary.sql"
+IDR_DB_GET_DEFINITEINSPECTIONFILECHECK          RCDATA "db/sql/GetDefiniteInspectionFileCheck.sql"
+IDR_DB_GET_FILECHECK                            RCDATA "db/sql/GetFileCheck.sql"
+IDR_DB_GET_MAJORVERSIONFROMFULLVERSION          RCDATA "db/sql/GetMajorVersionFromFullVersion.sql"
+
+IDR_DB_SET_CATEGORYPROPERTIES                   RCDATA "db/sql/SetCategoryProperties.sql"
+IDR_DB_SET_COMPUTERPROPERTIES                   RCDATA "db/sql/SetComputerProperties.sql"
+IDR_DB_SET_HARDWARELICENSERULEPROPERTIES        RCDATA "db/sql/SetHardwareLicenseRuleProperties.sql"
+IDR_DB_SET_LICENSERULEPROPERTIES                RCDATA "db/sql/SetHardwareProperties.sql"
+IDR_DB_SET_HARDWAREPROPERTIES                   RCDATA "db/sql/SetLicenseRuleProperties.sql"
+IDR_DB_SET_OBJECTROOTPROPERTIES                 RCDATA "db/sql/SetObjectRootProperties.sql"
+IDR_DB_SET_PASSPORTPROPERTIES                   RCDATA "db/sql/SetPassportProperties.sql"
+IDR_DB_SET_PROHIBITIONRULEPROPERTIES            RCDATA "db/sql/SetProhibitionRuleProperties.sql"
+IDR_DB_SET_PUBLISHERPROPERTIES                  RCDATA "db/sql/SetPublisherProperties.sql"
+IDR_DB_SET_SOFTPROPERTIES                       RCDATA "db/sql/SetSoftProperties.sql"
+IDR_DB_SET_SOFTTYPEPROPERTIES                   RCDATA "db/sql/SetSoftTypeProperties.sql"
+IDR_DB_SET_SUBDIVISIONPROPERTIES                RCDATA "db/sql/SetSubdivisionProperties.sql"
+IDR_DB_SET_SYNONYMPROPERTIES                    RCDATA "db/sql/SetSynonymProperties.sql"
+IDR_DB_SET_TASKPROPERTIES                       RCDATA "db/sql/SetTaskProperties.sql"
+IDR_DB_SET_LIBPRODUCTFILEPROPERTIES             RCDATA "db/sql/SetLibProductFileProperties.sql"
+IDR_DB_CREATE_VIEWMAXCOMPUTERACTION             RCDATA "db/sql/CreateViewMaxComputerAction.sql"
+IDR_DB_CREATE_VIEWMAXFILESSEARCHCOMPUTERACTION  RCDATA "db/sql/CreateViewMaxFilesSearchComputerAction.sql"
+IDR_DB_CREATE_VIEWMAXPROGRAMSSEARCHCOMPUTERACTION RCDATA "db/sql/CreateViewMaxProgramsSearchComputerAction.sql"
+IDR_DB_GET_COMPWITHSECURITY                     RCDATA "db/sql/GetCompWithSecurity.sql"
+IDR_DB_GET_COMPWITHDEFINITESECURITY             RCDATA "db/sql/GetCompWithDefiniteSecurity.sql"
+IDR_DB_GET_SECURITYSOFTLIST                     RCDATA "db/sql/GetSecuritySoftList.sql"
+IDR_DB_GET_DATAFROMOLDDB                        RCDATA "db/sql/GetDataFromOldDB.sql"
+IDR_DB_GET_LIBRARYFROMOLDDB                     RCDATA "db/sql/GetLibraryFromOldDB.sql"
+IDR_DB_GET_COMPUTERSFROMOLDDB                   RCDATA "db/sql/GetComputersFromOldDB.sql"
+IDR_DB_GET_TASKSFROMOLDDB                       RCDATA "db/sql/GetTasksFromOldDB.sql"
+IDR_DB_GET_RULESFROMOLDDB                       RCDATA "db/sql/GetRulesFromOldDB.sql"
+IDR_DB_GET_PASPORTSFROMOLDDB                    RCDATA "db/sql/GetPassportsFromOldDB.sql"
+IDR_DB_GET_INSPECTIONSFROMOLDDB                 RCDATA "db/sql/GetInspectionsFromOldDB.sql"
+IDR_DB_CLEARDB                                  RCDATA "db/sql/ClearDB.sql"
+IDR_DB_INSERT_CHIPSETLIBRARY                    RCDATA "db/sql/InsertChipsetLibrary.sql"        
+IDR_DB_ADD_CHIPSETLIBRARY                       RCDATA "db/sql/AddChipsetLibrary.sql"
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

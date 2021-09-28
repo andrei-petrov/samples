@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Storage">
+      <UniqueIdentifier>{f7e1048f-b2b6-41cd-a830-e35f9538a41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{f3b1b1c8-66ba-44b7-8b9c-7c34f2bb44c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8d80813d-8c93-49f7-ae53-b88723e7e94a}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Sql">
+      <UniqueIdentifier>{12964571-bbd2-4bda-b6eb-f04ed06b7472}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ConnectionHolder.cpp">
+      <Filter>Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ConnectionPool.cpp">
+      <Filter>Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DBExporter.cpp">
+      <Filter>Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Storage.cpp">
+      <Filter>Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StdAfx.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SqlBrowser.cpp">
+      <Filter>Storage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConnectionHolder.h">
+      <Filter>Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConnectionPool.h">
+      <Filter>Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DBExporter.h">
+      <Filter>Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Storage.h">
+      <Filter>Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="include\db.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\stdafx.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Constants.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SqlBrowser.h">
+      <Filter>Storage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\db.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\DefaultPicture.JPG">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resource\resource.hm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sql\AddInitialData.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\AddInitialObjects.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\AddLibrary.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateCategory.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateComputerLink.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateHardwareLicenseRule.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateHardwareLicenseRuleLink.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateLibProductFile.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateLicenseImage.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateLicenseRule.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateLicenseRuleLink.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateObjectRelationViews.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreatePassport.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreatePassportLink.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateProhibitionRule.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreatePublisher.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateSoftType.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateSubdivision.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateSynonym.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateTables.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateTask.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewComputer.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewComputerPassports.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewFileInstallation.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewFoundProductFile.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewHardInstallation.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewHardwareLicenseRule.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewInstallation.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewLibProductFile.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewLicenseRule.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewMaxComputerAction.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewPassportHardwareLicenseRules.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewPassportLicenseRules.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewProhibitionRule.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViews.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewSoft.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewSoftType.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewSynonym.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewTaskComputers.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\DeleteObject.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\DeleteOldActions.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetAllHardChanges.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetAllSoftChanges.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetCharGuid.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetComputerCredentials.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetComputerHard.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetComputerOS.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetComputerOSList.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetComputerSoft.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetCompWithDefiniteSecurity.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetCompWithSecurity.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetCorrectedUTCTimeTo.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetDefiniteInspectionFileCheck.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetDeviceList.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetExtendDeviceDesc.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetFileCheck.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetFrequencyFromProcessorName.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetFullVersion.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetHardwareChanges.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetHardwarePassportCheck.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetInspectedComputers.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetLanguage.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetLibraryXML.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetMajorVersionFromFullVersion.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetNameFromTemplate.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetObjectCount.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetPassportList.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetPassportNonQualifyComp.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetProductNameGroup.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetProductNameWithoutLanguage.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetRepComputerWithHardwareParams.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetRepCompWithSoftParams.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetReportParams.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetReports.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetRepParamValue.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetRootDN.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetSecuritySoftList.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetSoftList.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetSoftPassportCheck.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetSoftTypeGUID.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetVersion.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetWideSpreadHardware.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetWideSpreadSoft.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertFailedInspection.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertNewFilesFound.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertNewFoundProductFiles.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertNewHardware.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertNewInspectionData.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertNewReports.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertNewSoft.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertNewUSBDevice.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\IsComputerExist.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\IsObjectLocked.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\MoveObject.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\RetrievePassword.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SavePassword.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SearchChildren.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SearchObjects.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetCategoryProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetComputerProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetHardwareLicenseRuleProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetHardwareProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetLibProductFileProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetLicenseRuleProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetObjectRootProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetPassportProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetProhibitionRuleProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetPublisherProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetRootDN.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetRootName.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetSoftProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetSoftTypeProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetSubdivisionProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetSynonymProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetTaskProperties.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetUserPicture.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SetVersion.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\SPGetLanguage.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\UpdateDBOnNewSynonyms.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetDataFromOldDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetLibraryFromOldDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetPassportsFromOldDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetRulesFromOldDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetComputersFromOldDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetInspectionsFromOldDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\GetTasksFromOldDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\ClearDB.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\AddChipsetLibrary.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\InsertChipsetLibrary.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewLastComputerInsp.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewLastSuccessComputerInsp.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewMaxProgramsSearchComputerAction.sql">
+      <Filter>Sql</Filter>
+    </None>
+    <None Include="sql\CreateViewMaxFilesSearchComputerAction.sql">
+      <Filter>Sql</Filter>
+    </None>
+  </ItemGroup>
+</Project>

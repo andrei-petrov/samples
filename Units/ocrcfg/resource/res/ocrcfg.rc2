@@ -1,0 +1,20 @@
+//
+// ocrcfg.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+#define VER_FILETYPE    VFT_APP
+#define VER_FILESUBTYPE VFT2_UNKNOWN
+#define VER_FILEDESCRIPTION_STR     "Конфигуратор системы РИО"
+#define VER_INTERNALNAME_STR        "ocrcfg.exe"
+//#define VER_MODULE_BUILD 0
+#include <ntverp.h>
+#include "common.ver"
+
+
